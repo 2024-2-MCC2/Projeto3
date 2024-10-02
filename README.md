@@ -15,8 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="https://raw.githubusercontent.com/2024-2-MCC2/Projeto3/refs/heads/main/imagens/Enrolados.png" alt="Enrolados" border="0">
 </p>
 
 
@@ -25,6 +24,9 @@ Com base na ODS de número 3, Saúde e bem-estar, o nosso projeto tem como objet
 Meta 3.7 Até 2030, assegurar o acesso universal aos serviços de saúde sexual e reprodutiva, incluindo o planejamento familiar, informação e educação, bem como a integração da saúde reprodutiva em estratégias e programas nacionais.
 <br><br>
 O nosso site contará com inúmeros artigos que ajudaram o usuário a se informar sobre o assunto, além de uma seção dedicada a encaminhar o usuário a diversas ONGs que buscam ajudar mulheres e meninas em situações vulneráveis.
+
+## Protótipo navegável no Figma
+https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&t=TPYKISG01Ujo0VhJ-1
 
 ## 🛠 Estrutura de pastas
 
