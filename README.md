@@ -25,6 +25,9 @@ Meta 3.7 Até 2030, assegurar o acesso universal aos serviços de saúde sexual 
 <br><br>
 O nosso site contará com inúmeros artigos que ajudaram o usuário a se informar sobre o assunto, além de uma seção dedicada a encaminhar o usuário a diversas ONGs que buscam ajudar mulheres e meninas em situações vulneráveis.
 
+## Protótipo navegável no Figma
+https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&t=TPYKISG01Ujo0VhJ-1
+
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
