@@ -5,6 +5,7 @@ import SetaEsquerda from './SetaEsquerda.png';
 import PrimeiraImagem from './img/dsts(950x350).jpg';
 import SegundaImagem from './img/Ensaio_Grávida.jpg';
 import TerceiraImagem from './img/vaccine-1.jpg'
+import { Link } from 'react-router-dom';
 
 // CSS do Carrossel
 const CarrosselContainer = styled.div`
@@ -17,7 +18,7 @@ const CarrosselContainer = styled.div`
   align-items: center;
 `;
 
-const CarrosselImagens = styled.div`
+const CarrosselImagens = styled(Link)`
   display: flex;
   transition: transform 0.5s ease-in-out;
 `;
@@ -60,7 +61,7 @@ const ImagemBotao = styled.img`
 `;
 
 // CSS do Texto
-const HyperlinkTexto = styled.a`
+const HyperlinkTexto = styled(Link)`
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -77,6 +78,9 @@ const HyperlinkTexto = styled.a`
   text-align: center;
   padding: 5px;
   color: white;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const TextosDoCarrossel = styled.div`
@@ -89,6 +93,7 @@ function Carrossel() {
   const carouselRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentText, setCurrentText] = useState(TextoAtual(0));
+  const [linkatual, setLinkatual] = useState(Linkeatual(0));
 
   function showImage(index) {
     if (carouselRef.current) {
@@ -108,10 +113,22 @@ function Carrossel() {
     }
   }
 
+  function Linkeatual(index){
+    switch (index){
+      case 0:
+        return "/DSTs_ISTs"
+        case 1:
+          return "/Impactos_Gravidez_Adolescencia"
+          case 2:
+            return "Vacina_Gravidez"
+    }
+  }
+
   function Proximo() {
     setCurrentIndex((prevIndex) => {
       const newIndex = (prevIndex + 1) % 3;
       setCurrentText(TextoAtual(newIndex));
+      setLinkatual(Linkeatual(newIndex));
       showImage(newIndex);
       return newIndex;
     });
@@ -121,20 +138,22 @@ function Carrossel() {
     setCurrentIndex((prevIndex) => {
       const newIndex = (prevIndex - 1 + 3) % 3;
       setCurrentText(TextoAtual(newIndex));
+      setLinkatual(Linkeatual(newIndex));
       showImage(newIndex);
       return newIndex;
     });
+
   }
 
   return (
     <CarrosselContainer>
-      <CarrosselImagens ref={carouselRef}>
+      <CarrosselImagens to={linkatual} ref={carouselRef}>
         <ImagemCarrIndividual src={PrimeiraImagem} alt="Imagem 1" />
         <ImagemCarrIndividual src={SegundaImagem} alt="Imagem 2" />
         <ImagemCarrIndividual src={TerceiraImagem} alt="Imagem 3" />
       </CarrosselImagens>
       <TextosDoCarrossel>
-        <HyperlinkTexto href='#'>{currentText}</HyperlinkTexto>
+        <HyperlinkTexto to={linkatual} >{currentText}</HyperlinkTexto>
       </TextosDoCarrossel>
       <BotaoProximo onClick={Proximo}>
         <ImagemBotao src={SetaDireita} alt="Seta para a direita" />

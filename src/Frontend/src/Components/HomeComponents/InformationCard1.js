@@ -52,7 +52,7 @@ const TextoCard = styled.p`
 
 function InformationCard() {
   return (
-    <Card>
+    <Card to = "/Dados">
       <Imagem src={BG} />
       <BackDiv>
         <TituloCard>

@@ -7,7 +7,9 @@ padding-top: 40px;
 display: flex;
 flex-direction: column;
 `
-const ArtigoIndvContainer = styled.a`
+const ArtigoIndvContainer = styled(Link)`
+text-decoration: none;
+color: black;
 width: 500px;
 transition: all 0.3s ease;
 background-color: #f9f9f9; 
@@ -28,6 +30,8 @@ const ArtImg = styled.img`
 /* width: 100%; */
 /* height: auto; */
 border-radius: 8px;
+max-width: 180px;
+max-height: 120px;
 `
 
 const AContainer = styled.a`
@@ -38,16 +42,16 @@ padding-top: 20px;
 function ArtigosRelacionados(){
     return(
         <ArtigosContainer>
-            <ArtigoIndvContainer>
-                <ArtImg src="https://placehold.co/180x120/000000/FFFFFF.png"/>
+            <ArtigoIndvContainer to = "/Herpes_Genital">
+                <ArtImg src="/static/media/image2.b6a1328a31205c9f776a.png"/>
                 <AContainer>HERPES GENITAL</AContainer>
             </ArtigoIndvContainer>
-            <ArtigoIndvContainer>
-                <ArtImg src="https://placehold.co/180x120/000000/FFFFFF.png"/>
+            <ArtigoIndvContainer to = "/HIV">
+                <ArtImg src="/static/media/image5.a51dc9d1baa2e570ecab.png"/>
                 <AContainer>HIV</AContainer>
             </ArtigoIndvContainer>
-            <ArtigoIndvContainer>
-                <ArtImg src="https://placehold.co/180x120/000000/FFFFFF.png"/>
+            <ArtigoIndvContainer to = "/Sifilis">
+                <ArtImg src="/static/media/image4.0764b7a563af3e8ebadb.png"/>
                 <AContainer>SÍFLIS</AContainer>
             </ArtigoIndvContainer>
         </ArtigosContainer>

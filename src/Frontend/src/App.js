@@ -1,6 +1,6 @@
 import Home from "./pages/Home"
 import Herpes from "./pages/Herpes_Genital"
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, ScrollRestoration} from "react-router-dom"
 import GlobalStyles from "./styles/GlobalStyles";
 import Quem_Somos from "./pages/Quem_Somos"
 import Gonorreia from "./pages/Gonorreia"
@@ -14,6 +14,9 @@ import Sifilis from "./pages/Sifilis"
 import HepatiteViral from "./pages/Hepatite_Viral";
 import Clamidia from "./pages/Clamidia";
 import HPVGenital from "./pages/HPV_Genital"
+import DSTsISTs from "./pages/DSTs_ISTs"
+import GravidezAdoles from "./pages/GravidezAdolesInpa";
+import VacinaGravidez from "./pages/Vacina_Gravidez";
 
 function App() {
   return (
@@ -35,6 +38,10 @@ function App() {
           <Route path="/Hepatite_Viral" element = {<HepatiteViral/>}/>
           <Route path="/Clamidia" element = {<Clamidia/>}/>
           <Route path="/HPV_Genital" element = {<HPVGenital/>}/>
+          <Route path="/DSTs_ISTs" element = {<DSTsISTs/>}/>
+          <Route path="/Impactos_Gravidez_Adolescencia" element = {<GravidezAdoles/>}/>
+          <Route path="/Vacina_Gravidez" element = {<VacinaGravidez/>}/>
+
         </Routes>
       </Router>
     </div>
