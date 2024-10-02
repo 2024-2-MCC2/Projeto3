@@ -1,6 +1,6 @@
 import Home from "./pages/Home"
 import Herpes from "./pages/Herpes_Genital"
-import { BrowserRouter as Router, Routes, Route, ScrollRestoration} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import GlobalStyles from "./styles/GlobalStyles";
 import Quem_Somos from "./pages/Quem_Somos"
 import Gonorreia from "./pages/Gonorreia"

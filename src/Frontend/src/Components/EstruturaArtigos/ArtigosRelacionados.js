@@ -40,17 +40,18 @@ padding-top: 20px;
 `
 
 function ArtigosRelacionados(){
+    const scrollToTop = () => window.scrollTo(0, 0)
     return(
         <ArtigosContainer>
-            <ArtigoIndvContainer to = "/Herpes_Genital">
+            <ArtigoIndvContainer onClick={scrollToTop} to = "/Herpes_Genital">
                 <ArtImg src="/static/media/image2.b6a1328a31205c9f776a.png"/>
                 <AContainer>HERPES GENITAL</AContainer>
             </ArtigoIndvContainer>
-            <ArtigoIndvContainer to = "/HIV">
+            <ArtigoIndvContainer onClick={scrollToTop} to = "/HIV">
                 <ArtImg src="/static/media/image5.a51dc9d1baa2e570ecab.png"/>
                 <AContainer>HIV</AContainer>
             </ArtigoIndvContainer>
-            <ArtigoIndvContainer to = "/Sifilis">
+            <ArtigoIndvContainer onClick={scrollToTop} to = "/Sifilis">
                 <ArtImg src="/static/media/image4.0764b7a563af3e8ebadb.png"/>
                 <AContainer>SÍFLIS</AContainer>
             </ArtigoIndvContainer>

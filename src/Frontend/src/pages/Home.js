@@ -30,6 +30,7 @@ grid-template-areas:
 `
 
 function Home() {
+  
     return (
       <Bodycontainer>
         <Header>

@@ -6,7 +6,6 @@ function VacinaGravidez(){
     return(
         <div>
             <Header/>
-            foifoi
             <Footer/>
         </div>
     )

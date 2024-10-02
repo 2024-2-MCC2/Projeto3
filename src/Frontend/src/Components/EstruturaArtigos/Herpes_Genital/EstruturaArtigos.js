@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ArtigosRelacionados from "./ArtigosRelacionados";
+import ArtigosRelacionados from "../ArtigosRelacionados";
 import Herpes from "./image1.png";
 import Sintomas from "./sintomas-do-herpes-genital.jpg";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ArtigosRelacionados from "./ArtigosRelacionados";
+import ArtigosRelacionados from "../ArtigosRelacionados";
 
 
 

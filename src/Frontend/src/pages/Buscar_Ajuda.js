@@ -40,9 +40,7 @@ function Buscar_Ajuda(){
             <Header/>
             <BuscarTitulo>Precisa de Ajuda?</BuscarTitulo>
             <BuscarSubTitulo>Venha ver o que você pode fazer caso queira fazer exames</BuscarSubTitulo>
-            <BuscarAjudaTxt>AAAAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</BuscarAjudaTxt>
+            <BuscarAjudaTxt></BuscarAjudaTxt>
             <Footer/>
         </div>
     )

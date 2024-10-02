@@ -29,14 +29,15 @@ margin: 0;
 `
 
 function Nav() {
+  const scrollToTop = () => window.scrollTo(0, 0)
   return (
     <nav>
       <UlContainer>
-        <LiContainer><AContainer to="/Artigos">Artigos</AContainer></LiContainer>
-        <LiContainer><AContainer to="/Dados">Dados</AContainer></LiContainer>
-        <LiContainer><AContainer to="/Buscar_Ajuda">Buscar ajuda</AContainer></LiContainer>
-        <LiContainer><AContainer to = "/Quem_Somos">Quem somos</AContainer></LiContainer>
-        <LiContainer><AContainer to = "/Contato">Contato</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to="/Artigos">Artigos</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to="/Dados">Dados</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to="/Buscar_Ajuda">Buscar ajuda</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to = "/Quem_Somos">Quem somos</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to = "/Contato">Contato</AContainer></LiContainer>
       </UlContainer>
     </nav>
   );

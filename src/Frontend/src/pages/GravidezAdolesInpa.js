@@ -6,7 +6,6 @@ function GravidezAdoles(){
     return(
         <div>
             <Header/>
-            foi
             <Footer/>
         </div>
     )

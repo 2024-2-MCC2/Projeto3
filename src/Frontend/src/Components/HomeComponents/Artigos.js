@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Imagem1 from "./img/image1.png";
 import Imagem2 from "./img/image2.png";
@@ -36,6 +36,8 @@ const DescriArt = styled.p`
 
 // Controla o tamanho da imagem
 const ArtImg = styled.img`
+  max-width: 254px;
+  max-height: 184px;
   width: 100%; 
   height: auto; 
   border-radius: 8px; 
@@ -44,6 +46,8 @@ const ArtImg = styled.img`
 // Container de cada Artigo
 const ArtiIndivContainer = styled(Link)`
   min-height: 400px;
+  max-height: 400px;
+  max-width: 260px;
   text-decoration: none;
   transition: all 0.3s ease;
   background-color: #f9f9f9; 
@@ -70,37 +74,38 @@ const AContainer = styled.p`
 `
 
 function Artigos() {
+  const scrollToTop = () => window.scrollTo(0, 0)
+
   return (
     <div>
       <TituloArtigos>Artigos</TituloArtigos>
       <ArtigosComtainer>
-        <ArtiIndivContainer to = "/Herpes_Genital">
+        <ArtiIndivContainer to="/Herpes_Genital" onClick={scrollToTop}>
           <ArtImg src={Imagem1} alt="Artigo 1" />
           <AContainer>Herpes Genital: O que é, sintomas, tratamentos e causas.</AContainer>
           <DescriArt>Infecção sexualmente transmissível, causada pelo vírus do Herpes simples (HSV) que provoca lesões na pele e nas mucosas dos órgãos genitais masculinos e femininos.</DescriArt>
         </ArtiIndivContainer>
-        <ArtiIndivContainer to = "/Gonorreia">
+        <ArtiIndivContainer to="/Gonorreia" onClick={scrollToTop}>
           <ArtImg src={Imagem2} alt="Artigo 2" />
           <AContainer>Gonorreia: sintomas, diagnóstico e tratamento</AContainer>
           <DescriArt>A gonorreia é uma IST, causada pela bactéria Neisseria gonorrhoeae, que causa infecção nos órgãos genitais, reto e garganta. É muito comum, especialmente entre jovens de 15 a 24 anos.</DescriArt>
         </ArtiIndivContainer>
-        <ArtiIndivContainer to = "/Clamidia">
+        <ArtiIndivContainer to="/Clamidia" onClick={scrollToTop}>
           <ArtImg src={Imagem3} alt="Artigo 3" />
           <AContainer>Clamidia</AContainer>
           <DescriArt>Clamídia é uma infecção sexualmente transmissível (IST) causada pela bactéria Chlamydia trachomatis, podendo ser assintomática, ou resultar que exigem um tratamento médico para ser sanada.</DescriArt>
         </ArtiIndivContainer>
-        <ArtiIndivContainer to = "/Sifilis">
+        <ArtiIndivContainer to="/Sifilis" onClick={scrollToTop}>
           <ArtImg src={Imagem4} alt="Artigo 4" />
           <AContainer>Afinal, o que transmite a sífilis? Beijo e sexo oral passam a bactéria?</AContainer>
-          <DescriArt>A sífilis é uma infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: Primária, secundária e terciária. 
-          </DescriArt>
+          <DescriArt>A sífilis é uma infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: Primária, secundária e terciária.</DescriArt>
         </ArtiIndivContainer>
-        <ArtiIndivContainer to ="/HIV">
+        <ArtiIndivContainer to="/HIV" onClick={scrollToTop}>
           <ArtImg src={Imagem5} alt="Artigo 5" />
           <AContainer>AIDS/HIV</AContainer>
           <DescriArt>HIV é o vírus da imunodeficiência humana, que pode ser transmitido através do contato sexual desprotegido com uma pessoa contaminada com esse vírus, ou ainda pelo compartilhamento de agulhas ou passado da mãe para o bebê na gravidez ou amamentação.</DescriArt>
         </ArtiIndivContainer>
-        <ArtiIndivContainer to = "/Hepatite_Viral">
+        <ArtiIndivContainer to="/Hepatite_Viral" onClick={scrollToTop}>
           <ArtImg src={Imagem6} alt="Artigo 6" />
           <AContainer>HEPATITE VIRAL</AContainer>
           <DescriArt>Inflamação do fígado que, na maioria dos casos, é causada por vírus, porém também pode acontecer como consequência do uso indiscriminado de medicamentos, do consumo excessivo de bebidas alcoólicas ou devido a uma alteração autoimune.</DescriArt>
@@ -111,3 +116,4 @@ function Artigos() {
 }
 
 export default Artigos;
+

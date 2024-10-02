@@ -90,6 +90,7 @@ const TextosDoCarrossel = styled.div`
 
 // Código para o funcionamento do carrossel
 function Carrossel() {
+  const scrollToTop = () => window.scrollTo(0, 0)
   const carouselRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentText, setCurrentText] = useState(TextoAtual(0));
@@ -153,7 +154,7 @@ function Carrossel() {
         <ImagemCarrIndividual src={TerceiraImagem} alt="Imagem 3" />
       </CarrosselImagens>
       <TextosDoCarrossel>
-        <HyperlinkTexto to={linkatual} >{currentText}</HyperlinkTexto>
+        <HyperlinkTexto onClick={scrollToTop} to={linkatual} >{currentText}</HyperlinkTexto>
       </TextosDoCarrossel>
       <BotaoProximo onClick={Proximo}>
         <ImagemBotao src={SetaDireita} alt="Seta para a direita" />

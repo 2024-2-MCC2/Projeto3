@@ -6,7 +6,6 @@ function DSTsISTs(){
     return(
         <div>
             <Header/>
-            aloha
             <Footer/>
         </div>
     )

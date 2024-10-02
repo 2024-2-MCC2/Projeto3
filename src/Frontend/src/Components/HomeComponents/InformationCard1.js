@@ -15,6 +15,8 @@ const Card = styled(Link)`
 `;
 
 const Imagem = styled.img`
+  max-width: 	898px;
+  max-height: 526px;
   border-radius: 20px;
   width: 100%;
   height: auto; 
@@ -51,8 +53,9 @@ const TextoCard = styled.p`
 `;
 
 function InformationCard() {
+  const scrollToTop = () => window.scrollTo(0, 0)
   return (
-    <Card to = "/Dados">
+    <Card onClick={scrollToTop} to = "/Dados">
       <Imagem src={BG} />
       <BackDiv>
         <TituloCard>
