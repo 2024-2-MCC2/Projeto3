@@ -35,7 +35,7 @@ function Home() {
       <Bodycontainer>
         <Header>
         </Header>
-        <Banner></Banner>
+        {/* <Banner></Banner> */}
         <Main>
         </Main>
         <Footer></Footer>

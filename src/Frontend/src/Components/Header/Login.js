@@ -13,12 +13,18 @@ const EntrarContainer = styled(Link)`
 
 const IMGLogin = styled.img`
 border-radius: 40px;
+max-width: 50px;
+max-height: 50px;
+transition: all 0.5s ease 0s;
+&:hover{
+    border-color: #0D2329;
+}
 `
 
 function Login(){
     return(
         <LoginContainer>
-            <EntrarContainer to = "/Login"><IMGLogin src="https://placehold.co/50x50/333333/FFFFFF.png"></IMGLogin></EntrarContainer>
+            <EntrarContainer to = "/Login"><IMGLogin src={User}></IMGLogin></EntrarContainer>
         </LoginContainer>
     )
 }

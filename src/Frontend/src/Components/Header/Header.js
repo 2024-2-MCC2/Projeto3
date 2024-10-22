@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Nav from "./NavBar";
 import SearchBar from "./Search_Bar";
-import logo from "./Enrolados.png";
+import logo from "../../assets/EnroladosHeader.png";
 import { Link } from "react-router-dom";
 import Login from "./Login";
 
@@ -17,8 +17,9 @@ grid-area: h;
 `
 
 const HeaderImage = styled.img`
-max-width: 130px;
-max-height: 70px;
+margin-left: -30px;
+max-width: 230px;
+max-height: 170px;
 `
 
 const LinkHeader = styled(Link)`
@@ -28,14 +29,12 @@ const LinkHeader = styled(Link)`
 function Header() {
     return (
         <HeaderContainer>
-            <h1>
                 <LinkHeader to = "/">
                     <HeaderImage src={logo} alt="Logo do site"/>
                 </LinkHeader>
-            </h1>
             <Nav />
             <SearchBar />
-            {/* <Login></Login> */}
+            <Login></Login>
         </HeaderContainer>
     )
 }

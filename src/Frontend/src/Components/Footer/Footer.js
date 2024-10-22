@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../Header/Enrolados.png";
+import Logo from "../../assets/Enrolados.png";
 
 const FooterContainer = styled.footer`
   grid-area: f;
@@ -45,6 +45,7 @@ const InformacaoDiv = styled.div`
 const LogoFooter = styled.img`
   max-width: 130px;
   max-height: 70px;
+  margin-left: -45px;
 `
 
 const SocialLinks = styled.div`

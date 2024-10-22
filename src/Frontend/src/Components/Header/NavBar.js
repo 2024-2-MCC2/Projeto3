@@ -28,18 +28,23 @@ padding: 0;
 margin: 0;
 `
 
+const NavContainer = styled.nav`
+padding-left: 80px;
+margin-right: -40px;
+`
+
 function Nav() {
   const scrollToTop = () => window.scrollTo(0, 0)
   return (
-    <nav>
+    <NavContainer>
       <UlContainer>
         <LiContainer><AContainer onClick={scrollToTop} to="/Artigos">Artigos</AContainer></LiContainer>
         <LiContainer><AContainer onClick={scrollToTop} to="/Dados">Dados</AContainer></LiContainer>
         <LiContainer><AContainer onClick={scrollToTop} to="/Buscar_Ajuda">Buscar ajuda</AContainer></LiContainer>
         <LiContainer><AContainer onClick={scrollToTop} to = "/Quem_Somos">Quem somos</AContainer></LiContainer>
-        <LiContainer><AContainer onClick={scrollToTop} to = "/Contato">Contato</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to = "/ContatoPage">Contato</AContainer></LiContainer>
       </UlContainer>
-    </nav>
+    </NavContainer>
   );
 }
 

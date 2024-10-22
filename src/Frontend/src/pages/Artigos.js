@@ -16,11 +16,16 @@ grid-template-areas:
                     "f f f f f f";
 `
 
-function Artigos(){
+function Artigos(navigate){
     return(
         <ArtigoContainer>
             <Header/>
             <MainArtigo/>
+            {/* {Artigos.map((Artigos, index) => (
+                <div key={index}>
+
+                </div>
+            ))} */}
             <Footer/>
         </ArtigoContainer>
     )

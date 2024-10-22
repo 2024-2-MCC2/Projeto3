@@ -4,7 +4,7 @@ import SetaDireita from './SetaDireita.png';
 import SetaEsquerda from './SetaEsquerda.png';
 import PrimeiraImagem from './img/dsts(950x350).jpg';
 import SegundaImagem from './img/Ensaio_Grávida.jpg';
-import TerceiraImagem from './img/vaccine-1.jpg'
+import TerceiraImagem from './img/vaccine-1.jpg';
 import { Link } from 'react-router-dom';
 
 // CSS do Carrossel
@@ -90,11 +90,17 @@ const TextosDoCarrossel = styled.div`
 
 // Código para o funcionamento do carrossel
 function Carrossel() {
-  const scrollToTop = () => window.scrollTo(0, 0)
+  const scrollToTop = () => window.scrollTo(0, 0);
   const carouselRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentText, setCurrentText] = useState(TextoAtual(0));
   const [linkatual, setLinkatual] = useState(Linkeatual(0));
+
+  useEffect(() => {
+    const interval = setInterval(Proximo, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   function showImage(index) {
     if (carouselRef.current) {
@@ -111,17 +117,21 @@ function Carrossel() {
         return "Entenda os impactos da gravidez na adolescência";
       case 2:
         return "Vacinas e gravidez: uma combinação que garante saúde";
+      default:
+        return "";
     }
   }
 
-  function Linkeatual(index){
-    switch (index){
+  function Linkeatual(index) {
+    switch (index) {
       case 0:
-        return "/DSTs_ISTs"
-        case 1:
-          return "/Impactos_Gravidez_Adolescencia"
-          case 2:
-            return "Vacina_Gravidez"
+        return "/DSTs_ISTs";
+      case 1:
+        return "/Impactos_Gravidez_Adolescencia";
+      case 2:
+        return "/Vacina_Gravidez";
+      default:
+        return "/";
     }
   }
 
@@ -143,7 +153,6 @@ function Carrossel() {
       showImage(newIndex);
       return newIndex;
     });
-
   }
 
   return (
@@ -154,7 +163,7 @@ function Carrossel() {
         <ImagemCarrIndividual src={TerceiraImagem} alt="Imagem 3" />
       </CarrosselImagens>
       <TextosDoCarrossel>
-        <HyperlinkTexto onClick={scrollToTop} to={linkatual} >{currentText}</HyperlinkTexto>
+        <HyperlinkTexto onClick={scrollToTop} to={linkatual}>{currentText}</HyperlinkTexto>
       </TextosDoCarrossel>
       <BotaoProximo onClick={Proximo}>
         <ImagemBotao src={SetaDireita} alt="Seta para a direita" />

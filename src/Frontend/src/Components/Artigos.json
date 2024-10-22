@@ -1,0 +1,233 @@
+[
+    {
+        "id":"HIV",
+        "title": "AIDS / HIV",
+        "subtitle": "A aids é a doença causada pela infecção do Vírus da Imunodeficiência Humana (HIV é a sigla em inglês).",
+        "image": "image3",
+        "content": [
+            {
+                "heading": "O que é:",
+                "text": "HIV é o vírus da imunodeficiência humana, que pode ser transmitido através do contato sexual desprotegido com uma pessoa contaminada com esse vírus, ou ainda pelo compartilhamento de agulhas ou passado da mãe para o bebê na gravidez ou amamentação."
+            },
+            {
+                "heading": "Sintomas:",
+                "text": "Os principais sintomas de uma infecção pelo HIV é possível AIDS são: Cansaço; Dor de cabeça ou dor de garganta, dor muscular ou nas articulações, suor noturno, diarreia, ínguas, rash cutâneo e febre baixa,  além de poder evoluir para a AIDS, chamada de síndrome da imunodeficiência adquirida, causada pela destruição do sistema imune pelo vírus HIV."
+            },
+            {
+                "heading": "Formas de transmissão:",
+                "text": "O vírus HIV pode ser transmitido através do contato com sangue ou fluidos corporais, como leite materno, secreções vaginais e sêmen, de uma pessoa contaminada com o vírus, sendo assim, as principais formas de transmissão são: Relação sexual vaginal, oral e/ou anal sem uso de preservativo com uma pessoa infectada pelo HIV, compartilhamento de seringas contaminadas pelo HIV, durante e gravidez ou amamentação, contato direto com sangue ou fluidos corporais de uma pessoa infectada. "
+            },
+            {
+                "heading": "Diagnóstico:",
+                "text": " O diagnóstico da infecção pelo HIV é feito pelo infectologista ou clínico geral através da avaliação dos sintomas, assim como quando surgiram e histórico de comportamento de risco. Para que haja a confirmação do diagnóstico, o médico pode fazer um teste rápido de HIV e/ou solicitar exames de sangue ou saliva, para verificar a presença de anticorpos, antígenos ou RNA do vírus no organismo, assim como o tipo de vírus HIV."
+            },
+            {
+                "heading":"Tratamento:",
+                "text": "O tratamento do HIV e AIDS deve ser feito com orientação do infectologista com o uso de um coquetel de medicamentos antirretrovirais, como dolutegravir, lamivudina e efavirenz, para reduzir a multiplicação de vírus e diminuir a carga viral."
+            }
+        ],
+        "relatedArticles": []
+    },
+    {
+        "id":"Herpes_Genital",
+        "title": "HERPES GENITAL",
+        "subtitle": "Infecção sexualmente transmissível causada pelo vírus herpes simplex e que provoca dor, coceira e feridas na área genital.",
+        "image": "image1",
+        "content": [
+            {
+                "heading": "O que é:",
+                "text": "A Herpes Genital é uma infecção sexualmente transmissível, causada pelo vírus do Herpes simplex (HSV) que provoca lesões na pele e nas mucosas dos órgãos genitais masculinos e femininos. O vírus herpes simplex vírus 1 (VHS-1), causador do herpes labial, não é o mesmo do herpes simplex vírus 2 (VHS-2), causador do herpes genital."
+            },
+            {
+                "heading": "Sintomas:",
+                "text": "Os sintomas da herpes genital tendem a se desenvolver dentro de três a sete dias após a relação sexual responsável pela infecção, mas em alguns casos pode demorar até duas semanas. O principal sinal do herpes genital são pequenas bolhas agrupadas nos órgãos genitais, as bolhas surgem, e logo em seguida, se rompem formando úlceras. Essas infecções são acompanhadas de outros sintomas como febre, mal-estar e dores no corpo. Se as úlceras estiverem próximas à saída uretra, pode haver intensa dor ao urinar. As lesões costumam demorar em média 20 dias para desaparecer e, logo depois, reaparecer constantemente, tendendo a ser menos dolorosas do que a primeira vez."
+            },
+            {
+                "heading": "Formas de transmissão:",
+                "text": "O vírus herpes simplex tipo 2 é transmitido pela via sexual. Mesmo quando o paciente está assintomático, período em que o paciente não produz os sintomas da herpes, ele pode transmitir o vírus da herpes em seu parceiro (a). Pacientes HIV positivos que também tenham herpes genital são o grupo que mais apresentam transmissão durante a fase assintomática."
+            },
+            {
+                "heading": "Diagnóstico:",
+                "text": "As lesões são facilmente reconhecidas por médicos experientes no momento das crises. Quando essas lesões estão na forma assintomática, elas podem necessitar de exames para confirmar a existência do vírus, porém esses documentos não fornecem informação sobre quando o paciente foi infectado."
+            },
+            {
+                "heading":"Tratamento:",
+                "text": " O vírus herpes simplex tipo 2 não tem cura, porém a infecção pode ser controlada com terapia antiviral. Esse tratamento serve para acelerar a cura das lesões, aliviar os sintomas, impedir complicações e reduzir o risco de transmissão para outros. Além dos medicamentos antivirais, alguns tratamentos caseiros podem ser usados para aliviar a dor dos sintomas, como o banho de assento com água fria. Para as mulheres, o banho de assento com água morna é uma boa opção na hora de urinar; sabões e banho de espuma devem ser evitados. Também é importante manter a área genital seca e limpa, evitar roupa interior apertada; cremes e pomadas não são recomendados. Ao invés disso, opte por ingerir analgésicos e anti-inflamatórios."
+            }
+        ],
+        "relatedArticles": []
+    },
+    {
+        "id":"Clamidia",
+        "title": "CLAMÍDIA",
+        "subtitle": "Clamídia é uma infecção sexualmente transmissível (IST) causada pela bactéria Chlamydia trachomatis.",
+        "image": "image4",
+        "content": [
+            {
+                "heading": "O que é:",
+                "text": "Clamídia é uma infecção sexualmente transmissível (IST) causada pela bactéria Chlamydia trachomatis, podendo ser assintomática, ou resultar que exigem um tratamento médico para ser sanada"
+            },
+            {
+                "heading": "Sintomas:",
+                "text": "Os sintomas de clamídia podem surgir de 1 a 3 semanas após a relação sexual desprotegida, no entanto mesmo que não existam sinais e sintomas aparentes, a pessoa pode transmitir a bactéria. Porém, os principais sintomas da clamídia são: Dor ou ardor ao urinar, Corrimento vaginal ou peniano, dor ou sangramento durante o contato íntimo, dor pélvica, dor e inchaço nos testículos (caso masculino), sangramento fora do período menstrual (caso feminino)."
+            },
+            {
+                "heading": "Formas de transmissão:",
+                "text": "A clamídia é uma doença infecciosa causada pela bactéria Chlamydia trachomatis, que pode ser transmitida através da relação sexual sem que haja proteção, seja ela oral, vaginal ou retal. Além disso, a clamídia também pode passar de mãe para filho durante o parto, quando a grávida tem a infecção e não tem o tratamento adequado. "
+            },
+            {
+                "heading": "Diagnóstico:",
+                "text": "O diagnóstico da clamídia é feito pelo urologista ou ginecologista através da avaliação dos sintomas, histórico de saúde e sexual, e exame físico. Para confirmar o diagnóstico, o médico deve solicitar a análise da secreção vaginal ou peniana e o exame de urina, para identificar a presença da bactéria."
+            },
+            {
+                "heading":"Tratamento:",
+                "text": " O tratamento para a clamídia deve ser feito com a orientação do ginecologista, urologista ou clínico geral e normalmente envolve o uso de antibióticos, como azitromicina ou doxiciclina. É recomendado manter o tratamento mesmo que não existam mais sintomas aparentes, pois assim é possível garantir que houve a eliminação da bactéria."
+            }
+        ],
+        "relatedArticles": []
+    },
+    {
+        "id":"Gonorreia",
+        "title": "GONORREIA",
+        "subtitle": "Infecção sexualmente transmissível causada pelo vírus herpes simplex e que provoca dor, coceira e feridas na área genital.",
+        "image": "image6",
+        "content": [
+            {
+                "heading": "O que é:",
+                "text": "A gonorreia é uma IST, causada pela bactéria Neisseria gonorrhoeae, que causa infecção nos órgãos genitais, reto e garganta. É muito comum, especialmente entre jovens de 15 a 24 anos."
+            },
+            {
+                "heading": "Sintomas:",
+                "text": "Os principais sintomas da Gonorreia são: dor ou ardor ao urinar, corrimento branco-amarelado semelhante ao pus, dor pélvica, sangramento fora do período menstrual,dor durante o contato íntimo, inchaço ou dor nos testículos, dor de garganta e comprometimento da voz, coceira ou secreção no ânus ou dor ao defecar, dor de garganta ínguas no pescoço ou úlceras ou feridas na época."
+            },
+            {
+                "heading": "Formas de transmissão:",
+                "text": "A gonorreia é trasmitida de uma pessoa para outra por meio da relação sexual desprotegida, seja ela anal, oral ou vaginal. "
+            },
+            {
+            "heading": "Gonorreia orofaríngea:",
+            "text":"Conhecida como gonorreia oral é trasmitida através de relações sexuais de maneira oral desprotegidas."
+            },
+            {
+                "heading": "Gonorreia genital:",
+                "text":"A gonorreia genital é transmitida pelo contato sexual desprotegido com uma pessoa infecctada."
+            },
+            {
+                "heading": "Diagnóstico:",
+                "text": "O diagnóstico da gonorreia é feito pelo ginecologista, urologista ou infectologista através da avaliação dos sintomas, histórico de relação sexual desprotegida e exame físico."
+            },
+            {
+                "heading":"Tratamento:",
+                "text": " O vírus herpes simplex tipo 2 não tem cura, porém a infecção pode ser controlada com terpia antiviral. Esse tratamento serve para acelerar a cura das lesões, aliviar os sintomas, impedir complicações e reduzir o risco de transmissão para outros. Além dos medicamentos antivirais alguns tratamentos caseiros podem ser usados para aliviar a dor dos sintomas, como, o banho de assento com água fria, para as mulheres o banho de assento com água morna é uma boa opcção na hora de urinar, sabões e banho de espuma devem ser evitados, também, é importante manter a área genital seca e limpa, evita roupa interior apertada, cremes e pomadas não são recomendados, ao inves disso, opte por ingerir analgésicos e anti-inflamatórios."
+            }
+        ],
+        "relatedArticles": []
+    },
+    {
+        "id":"Hepatite_Viral",
+        "title": "HEPATITE VIRAL",
+        "subtitle": "É uma infecção que atinge o fígado, causando alterações leves, moderadas ou graves. Na maioria das vezes são infecções silenciosas, ou seja, não apresentam sintomas.",
+        "image": "image2",
+        "content": [
+            {
+                "heading": "O que é:",
+                "text": "Inflamação do fígado que, na maioria dos casos, é causada por vírus, porém também pode acontecer como consequência do uso indiscriminado de medicamentos, do consumo excessivo de bebidas alcoólicas ou devido a uma alteração autoimune. Os tipos de hepatite mais frequentes são as causadas por vírus, principalmente as hepatites A, B e C, que podem provocar diversos sintomas."
+            },
+            {
+                "heading": "Sintomas:",
+                "text": "Dor de cabeça, mal-estar geral, dor e inchaço abdominal, pele e olhos amarelados, urina escura, fezes claras, náuseas e vômitos e perda de peso sem causa aparente. Os sintomas em questão podem variar de acordo com a causa dessa  condição, podendo haver mais ou menos sintomas de intensidades diferentes."
+            },
+            {
+                "heading": "Formas de transmissão:",
+                "text": "As principais formas de transmissão de hepatite de causa infecciosa são: Contato com sangue contaminado, consumo de agua e alimentos contaminados pelo virus, compartilhamento de seringas e agulhas, relações sexuais sem uso de preservativo e uso de materiais nao esterilizados para fazer tatuagens, piercings ou para fazer a unha, por exemplo.  "
+            },
+            {
+                "heading": "Diagnóstico:",
+                "text": "O diagnóstico de hepatite deve ser feito através do hepatologista, gastroenterologista ou clínico geral por meio da avaliação dos sinais, sintomas apresentados pela pessoa e o resultado de exames laboratoriais que avaliam o funcionamento do fígado, como TGO, TGP, bilirrubina e lactato desidrogenase."
+            },
+            {
+                "heading":"Tratamento:",
+                "text": "  Há diversas formas para que haja o devido tratamento da hepatite, entre elas, estão: Repouso e hidratação, dieta balanceada, abstinência de álcool, uso de medicamentos e, em alguns casos, o transplante de fígado."
+            }
+        ],
+        "relatedArticles": []
+    },
+    {
+        "id":"Sifilis",
+        "title": "SÍFILIS",
+        "subtitle": "Infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: primária, secundária e terciária.",
+        "image": "image7",
+        "content": [
+            {
+                "heading": "O que é:",
+                "text": "HIV é o vírus da imunodeficiência humana, que pode ser transmitido através do contato sexual desprotegido com uma pessoa contaminada com esse vírus, ou ainda pelo compartilhamento de agulhas ou passado da mãe para o bebê na gravidez ou amamentação."
+            },
+            {
+                "heading": "Sintomas:",
+                "text": "Passam a ser notados a partir do 3° dia após o contágio, assim, ocorrendo o primeiro estágio, sendo capaz de ocorrer formação de feridas indolores no órgão genital. As feridas desaparecem em cerca de até 10 dias, mesmo sem tratamento. O segundo estágio acontece cerca de duas a oito semanas após as primeiras feridas se formaram, aproximadamente 33% daqueles que não trataram a sífilis primária desenvolvem o segundo estágio. Podendo apresentar vermelhidão pelo corpo, coceira, dores musculares, febre, dor de garganta, dificuldade para deglutir e aparecimento de língua (gânglios inchados) nas axilas e pescoço. Esses sintomas somem sem tratamento após duas semanas e, em seguida, a bactéria fica inativa no organismo. Sendo a mais difícil de ser detectada, por ter sintomas em grandes casos, como a aorta, cérebro, olhos, coração, juntas, sistema nervoso, dor de cabeça e epilepsia, há a ocorrência do terceiro estágio. Caso não haja o devido tratamento, ocorre sintomas de gravidades maiores, como meningite, AVC, princípios de demência, perda de coordenação, formigamento, cegueira ou problemas de visão e problemas cardiovasculares."
+            },
+            {
+                "heading": "Formas de transmissão:",
+                "text": "A sífilis é transmitida por meio da relação sexual sem o uso da camisinha com uma pessoa na qual está infectada com a doença. Além disso, a doença apresenta chances de ser transmitida de maneira vertical para a criança, seja na gestação ou no parto."
+            },
+            {
+                "heading": "Diagnóstico:",
+                "text": "Existem exames específicos para que haja a conquista concreta e efetiva do diagnóstico, entre eles, estão:"
+            },
+            {
+                "heading": "Exame VDRL:",
+                "text": "Este exame pode identificar anticorpos no sangue que estão combatendo alguma infecção. Eles permanecem no sangue por anos, enquanto a bactéria estiver instalada no organismo, por isso o exame pode ser feito também para diagnosticar infecções antigas, cuja transmissão aconteceu há muito tempo. A vantagem do VDRL é que ele mostra a doença mesmo quando está ativa, por ser um teste quantitativo"
+            },
+            {
+                "heading": "FTA-ABS:",
+                "text": "Esse exame é considerado treponêmico, ou seja, ele é preparado com proteínas específicas para o Treponema pallidum. Ele é um teste qualitativo (resultado positivo ou negativo) e serve apenas para o diagnóstico e não para o acompanhamento da doença."
+            },
+            {
+                "heading": "Teste rápido para sífilis:",
+                "text": "os testes rápidos são feitos em menos de 30 minutos e é similar a um teste de gravidez: aparecendo uma ou duas faixas pintadas. Eles podem ser feitos em centros públicos de referência em IST e AIDS."
+            },
+            {
+                "heading": "Cultura de bactérias:",
+                "text": "O médico pode optar também por recolher amostras de uma secreção expelida por alguma ferida presente no corpo, que será analisada em microscópio. Este tipo de teste só pode ser realizado durante os dois primeiros estágios da sífilis, cujos sintomas envolvem o surgimento de feridas. A análise dessas substâncias pode indicar a presença da bactéria no organismo do paciente."
+            },
+            {
+                "heading": "Punção lombar:",
+                "text": "Se há suspeita de que o paciente está com complicações neurológicas causadas pela sífilis, o médico poderá coletar uma pequena amostra do líquido céfalo-raquidiano. As amostras são enviadas para laboratório e analisadas."
+            },
+            {
+                "heading":"Tratamento:",
+                "text": "O tratamento para sífilis deve ser feito de acordo com a orientação do médico, sendo importante seguir as indicações mesmo que não existam mais sintomas visíveis para garantir a eliminação da bactéria. Para isso, o médico normalmente indica injeções de penicilina-benzatina, também chamada de benzetacil, ou em alternativa outros antibióticos, como doxiciclina ou ceftriaxona."
+            }
+        ],
+        "relatedArticles": []
+    },
+    {
+        "id":"HPV_GENITAL",
+        "title": "HPV GENITAL",
+        "subtitle": "Infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: primária, secundária e terciária.",
+        "image": "image2",
+        "content": [
+            {
+                "heading": "O que é:",
+                "text": "O papilomavírus humano (HPV), é um vírus que infecta a pele e as mucosas e as lesões provocadas pela infecção também podem ser precursoras de câncer - entre eles, o câncer de colo de útero, garganta e ânus."
+            },
+            {
+                "heading": "Sintomas:",
+                "text": "O principal sintoma do HPV é o surgimento de verrugas ou lesões na pele, normalmente como uma pequena mancha branca ou acastanhada. Também pode surgir coceira e irritação no local. Nas mulheres a irritação aparecem na região genital, desenvolvendo-se na vulva, vagina e colo do útero. Nos homens a irritação pode se manifestar no pênis. Em todos os gêneros, o ânus, garganta, boca, pés e mãos são locais em que o vírus pode se manifestar."
+            },
+            {
+                "heading": "Formas de transmissão:",
+                "text": "O HPV é um vírus contagioso e transmitido, na maioria das vezes, pelo contato direto entre a pele. Entre os meios de transmissão mais conhecidos, está o ato sexual. Porém, diferente de outras ISTs, não é preciso haver troca de fluídos para que a transmissão ocorra: só o contato entre os órgãos sexuais já ocasiona a transmissão do vírus, além do compartilhamento de roupas íntimas ou toalhas. "
+            },
+            {
+                "heading": "Diagnóstico:",
+                "text": "Normalmente, o diagnóstico do HPV acontece em exames de rotina como o: papanicolau, colposcopia, vulvoscopia, peniscopia ou anuscopia Quando a lesão é encontrada, é feita uma biópsia em que a parte afetada é retirada para análise do tecido e DNA do vírus causador da lesão."
+            },
+            {
+                "heading":"Tratamento:",
+                "text": "O tratamento para sífilis deve ser feito de acordo com a orientação do médico, sendo importante seguir as indicações mesmo que não existam mais sintomas visíveis para garantir a eliminação da bactéria. Para isso, o médico normalmente indica injeções de penicilina-benzatina, também chamada de benzetacil, ou em alternativa outros antibióticos, como doxiciclina ou ceftriaxona."
+            }
+        ],
+        "relatedArticles": []
+    }
+]

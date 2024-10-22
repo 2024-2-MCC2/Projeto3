@@ -5,17 +5,15 @@ import { Route } from "react-router-dom";
 
 const SomosTitulo = styled.h1`
 font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-align-items: center ;
 padding-right: 5px;
+padding-left: 20px;
 `
 
 const SomosSubTitulo = styled.p`
-text-align: center;
 padding-bottom: 1em;
-align-items: center;
 color: #7B7B7B;
 font-style: italic;
+padding-left: 20px;
 `
 
 const QuemSomosEstrutura = styled.div`

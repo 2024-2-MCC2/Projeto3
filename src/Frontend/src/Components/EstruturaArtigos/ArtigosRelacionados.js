@@ -43,15 +43,15 @@ function ArtigosRelacionados(){
     const scrollToTop = () => window.scrollTo(0, 0)
     return(
         <ArtigosContainer>
-            <ArtigoIndvContainer onClick={scrollToTop} to = "/Herpes_Genital">
-                <ArtImg src="/static/media/image2.b6a1328a31205c9f776a.png"/>
+            <ArtigoIndvContainer onClick={scrollToTop} to = "/Artigo/Herpes_Genital">
+                <ArtImg src="/static/media/image1.dee133c136ff665beaf5.png"/>
                 <AContainer>HERPES GENITAL</AContainer>
             </ArtigoIndvContainer>
-            <ArtigoIndvContainer onClick={scrollToTop} to = "/HIV">
+            <ArtigoIndvContainer onClick={scrollToTop} to = "/Artigo/HIV">
                 <ArtImg src="/static/media/image5.a51dc9d1baa2e570ecab.png"/>
                 <AContainer>HIV</AContainer>
             </ArtigoIndvContainer>
-            <ArtigoIndvContainer onClick={scrollToTop} to = "/Sifilis">
+            <ArtigoIndvContainer onClick={scrollToTop} to = "/Artigo/Sifilis">
                 <ArtImg src="/static/media/image4.0764b7a563af3e8ebadb.png"/>
                 <AContainer>SÍFLIS</AContainer>
             </ArtigoIndvContainer>

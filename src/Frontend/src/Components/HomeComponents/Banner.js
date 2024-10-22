@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Enrolados from "../Header/Enrolados.png"
+import Enrolados from "../../assets/Enrolados.png"
 
 const BannerContainer = styled.div`
 margin-top: -3px;
