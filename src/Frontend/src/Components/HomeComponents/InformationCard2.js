@@ -56,7 +56,7 @@ const TextoCard = styled.p`
 function InformationCard() {
   const scrollToTop = () => window.scrollTo(0, 0)
   return (
-    <Card onClick={scrollToTop} to ="/Ongs">
+    <Card onClick={scrollToTop} to ="/Buscar_Ajuda">
       <Imagem src={BG} />
       <BackDiv>
         <TituloCard>

@@ -52,6 +52,7 @@
 import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import OngsCard from "../Components/BuscarAjuda/OngsCard";
 import { Route } from "react-router-dom";
 
 const SomosTitulo = styled.h1`
@@ -86,6 +87,7 @@ padding-left: 20px;
 width: 600px;
 `
 
+
 function Buscar_Ajuda() {
     return(
         <body>
@@ -97,8 +99,10 @@ function Buscar_Ajuda() {
             <SomosSubTitulo>Venha ver o que você pode fazer caso queira fazer exames</SomosSubTitulo>
             <QuemSomosTxt>ISTs são infecções cujas quais deve-se sempre tomar os devidos cuidados e fazer exames recorrentes para saber o estado do corpo.</QuemSomosTxt>
             <QuemSomosTxt>Os médicos especializados em Infecções Sexualmente Transmissíveis, geralmente são diagnosticadas por dermatologista ou urologista, no caso dos homens ou o ginecologista no caso das mulheres.</QuemSomosTxt>
+            <QuemSomosTxt>Reunimos algumas ongs que lutam por essa causa:</QuemSomosTxt>
             </div>
             </QuemSomosEstrutura>  
+            <OngsCard/>
             <Footer/>
         </body>
     )
