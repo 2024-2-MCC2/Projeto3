@@ -6,11 +6,11 @@ const ContatoContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-`
+`;
 
 const Titulo = styled.h1`
   text-align: center;
-`
+`;
 
 const Input = styled.input`
   display: block;
@@ -19,18 +19,18 @@ const Input = styled.input`
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-`
+`;
 
 const Pesquisa = styled(Input)`
   text-align: center;
-`
+`;
 
 const FormContainer = styled.form`
   width: 35%;
   display: flex;
-  flex-direction: column; 
-  align-items: center;
-`
+  flex-direction: column;
+  align-items: center; 
+`;
 
 const Pesquisona = styled.textarea`
   display: block;
@@ -42,7 +42,7 @@ const Pesquisona = styled.textarea`
   border-radius: 4px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-`
+`;
 
 const BotaoEnviar = styled.button`
   width: 50%; 
@@ -58,38 +58,38 @@ const BotaoEnviar = styled.button`
   &:hover {
     background-color: #0D2329;
   }
-`
+`;
 
 const TextoRestante = styled.p`
-font-size: 15px;
-margin-top: 0;
-align-self: flex-end;
-color: darkgrey;
+  font-size: 15px;
+  margin-top: 0;
+  align-self: flex-end;
+  color: darkgrey;
 `
 
 function Contato() {
-  const [indexAtual, setIndexAtual] = useState(0);
+  const [indexAtual, setIndexAtual] = useState(500);
   const [feedback, setFeedback] = useState("");
 
   const handleFeedbackChange = (event) => {
     const value = event.target.value;
-    const previousLength = feedback.length;
 
-    if(value.length <= 300){
+    if (value.length <= 500) {
       setFeedback(value);
-      if (value.length > previousLength) {
-        setIndexAtual((prev) => prev + 1); 
-      } else if (value.length < previousLength) {
-        setIndexAtual((prev) => Math.max(prev - 1, 0));
-      }
+      setIndexAtual(500 - value.length);
     }
   };
+
+  function Submit(event) {
+    event.preventDefault();
+    alert('Formulário enviado'); 
+  }
 
   return (
     <ContatoContainer>
       <Titulo>Contato</Titulo>
       <p>Entre em contato conosco. O seu feedback nos ajuda a melhorar a experiência do nosso site.</p>
-      <FormContainer>
+      <FormContainer onSubmit={Submit}>
         <Pesquisa type="text" placeholder="Insira o seu nome aqui" />
         <Pesquisa type="email" placeholder="Insira o seu email aqui" />
         <Pesquisa type="text" placeholder="Insira o assunto aqui" />

@@ -5,6 +5,7 @@ import ArtigosRelacionados from "./EstruturaArtigos/ArtigosRelacionados";
 import articlesData from './Artigos.json';
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
+import Comentarios from "./EstruturaArtigos/Comentarios";
 
 const EstruturaContainer = styled.div`
     display: flex;
@@ -55,15 +56,9 @@ function EstruturaArtigos() {
     const [article, setArticle] = useState(null);
 
     useEffect(() => {
-        
-        console.log("Received ID:", id);
-
+        console.log("ID Recebido:", id);
         const foundArticle = articlesData.find(article => article.id === id);
-
-        
-        console.log("Found Article:", foundArticle);
-
-        
+        console.log("Artigo encontrado:", foundArticle);
         setArticle(foundArticle);
     }, [id]);
 
@@ -90,6 +85,8 @@ function EstruturaArtigos() {
             </BackgroundArtigo>
             <h2>Artigos Relacionados</h2>
             <ArtigosRelacionados articles={article.relatedArticles} />
+            <h2>Comentarios</h2>
+            <Comentarios/>
         </EstruturaContainer>
         <Footer/>
         </div>

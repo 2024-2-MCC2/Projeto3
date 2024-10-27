@@ -54,7 +54,14 @@ const ButtonDiv = styled.div`
   width: 50%;
   justify-content: space-between;
   flex-wrap: wrap;
+  border: solid grey 1px;
+  border-radius: 10px;
+  padding: 5px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  background-color: white;
 `;
+
 
 const config = {
   initialSrcText: "https://datawrapper.dwcdn.net/tW0ft/1/",
@@ -131,12 +138,15 @@ function Dados() {
       <Header />
       <Container>
         <Title>Dados</Title>
-        <ButtonDiv>
+        <p style={{maxWidth:"800px"}}>Entender os fatores que contribuem para a gravidez na adolescência é crucial para promover a educação sexual adequada e o acesso a recursos de saúde. Aqui, você encontrará dados e estatísticas essenciais que destacam a magnitude deste tema visando sensibilizar e informar jovens e suas famílias</p>
+        <ButtonDiv style={{justifyContent:"space-evenly"}}>
+        <h1 style={{ flexBasis: "100%", textAlign: "center", fontSize:"20px" }}>Escolha o Tipo de Dado</h1>
           {config.buttonLabels.tipoDado.map((label, index) => (
             <ButtonDados key={index} onClick={() => TipoDadoAtual(index)}>{label}</ButtonDados>
           ))}
         </ButtonDiv>
         <ButtonDiv>
+        <h1 style={{ flexBasis: "100%", textAlign: "center", fontSize:"20px" }}>Escolha o Ano</h1>
           {config.buttonLabels.anos.map((label, index) => (
             <Button key={index} onClick={() => handleAnoChange(index)}>{label}</Button>
           ))}

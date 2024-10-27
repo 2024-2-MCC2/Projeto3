@@ -7,6 +7,7 @@ import Imagem2 from "../../assets/53151296903_6e06488261_b.jpg"
 import Imagem3 from "../HomeComponents/img/SifilisIMG.jfif"
 import Imagem4 from "../../assets/OIP.jfif"
 import Imagem5 from "../../assets/vacina-butantan.jpg"
+import Imagem6 from "../../assets/educação-sexual.jpg"
 
 const MainArtigoCont = styled.div`
 grid-area: m;
@@ -147,8 +148,8 @@ function MainArtigo() {
                     <Botao to="/HPV_Genital" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
                 </Artigocont2>
                 <Artigocont2>
-                    <Imagems style={{ gridArea: "i2"}} src="https://placehold.co/262x173/333333/FFFFFF.png"></Imagems>
-                    <H2Cont style={{ gridArea: "h2" , textAlign:"right", paddingRight:"30px"}}>HPV Genital</H2Cont>
+                    <Imagems style={{ gridArea: "i2"}} src={Imagem6}></Imagems>
+                    <H2Cont style={{ gridArea: "h2" , textAlign:"right", paddingRight:"30px"}}>A importância da educação sexual nas escolas</H2Cont>
                     <Subtitulo style={{ gridArea: "p2" }}>Clamídia é transmitida por meio de contato sexual (anal, oral ou vaginal) ou pela forma congênita (infecção passada da mãe para o bebê durante a gestação) e não pode ser transmitida por meio de transfusão sanguínea.
                         </Subtitulo>
                     <Botao to="/HPV_Genital" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
