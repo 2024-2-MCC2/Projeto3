@@ -30,8 +30,10 @@ https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&
 
 ## Frontend
 <p>Link para o <a href="https://github.com/2024-2-MCC2/Projeto3/blob/main/src/Frontend/src/App.js">App.js</a> do projeto</p>
-## Protótipo navegável no Figma
 
+## Backend
+<p>O banco de dados utilizado para o projeto é o MYSQL</p>
+<p>Link para o <a href="https://github.com/2024-2-MCC2/Projeto3/blob/main/documentos/Entrega%203/BD/Script%20SQL(Entrega%20Banco%20de%20Dados).txt">Readme</a> contendo o script sql do banco de dados </p>
 
 ## 🛠 Estrutura de pastas
 
