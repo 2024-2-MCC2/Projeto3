@@ -29,7 +29,7 @@ margin: 0;
 `
 
 const NavContainer = styled.nav`
-padding-left: 80px;
+padding-left: 1px;
 margin-right: -40px;
 `
 
@@ -40,8 +40,8 @@ function Nav() {
       <UlContainer>
         <LiContainer><AContainer onClick={scrollToTop} to="/Artigos">Artigos</AContainer></LiContainer>
         <LiContainer><AContainer onClick={scrollToTop} to="/Dados">Dados</AContainer></LiContainer>
-        <LiContainer><AContainer onClick={scrollToTop} to="/Buscar_Ajuda">Buscar ajuda</AContainer></LiContainer>
-        <LiContainer><AContainer onClick={scrollToTop} to = "/Quem_Somos">Quem somos</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to="/Buscar_Ajuda">Buscar Ajuda</AContainer></LiContainer>
+        <LiContainer><AContainer onClick={scrollToTop} to = "/Quem_Somos">Quem Somos</AContainer></LiContainer>
         <LiContainer><AContainer onClick={scrollToTop} to = "/ContatoPage">Contato</AContainer></LiContainer>
       </UlContainer>
     </NavContainer>

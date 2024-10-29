@@ -78,12 +78,12 @@ function Artigos() {
   const scrollToTop = () => window.scrollTo(0, 0);
 
   const articles = [
-    { id: "Herpes_Genital", title: "Herpes Genital: O que é, sintomas, tratamentos e causas.", image: Imagem1, description: "Infecção sexualmente transmissível, causada pelo vírus do Herpes simples (HSV) que provoca lesões na pele e nas mucosas dos órgãos genitais masculinos e femininos." },
+    { id: "Herpes_Genital", title: "Herpes genital: O que é, sintomas, tratamentos e causas.", image: Imagem1, description: "Infecção sexualmente transmissível, causada pelo vírus do Herpes simples (HSV) que provoca lesões na pele e nas mucosas dos órgãos genitais masculinos e femininos." },
     { id: "Gonorreia", title: "Gonorreia: sintomas, diagnóstico e tratamento", image: Imagem6, description: "A gonorreia é uma IST, causada pela bactéria Neisseria gonorrhoeae, que causa infecção nos órgãos genitais, reto e garganta. É muito comum, especialmente entre jovens de 15 a 24 anos." },
     { id: "Clamidia", title: "Clamidia", image: Imagem4, description: "Clamídia é uma infecção sexualmente transmissível (IST) causada pela bactéria Chlamydia trachomatis, podendo ser assintomática, ou resultar que exigem um tratamento médico para ser sanada." },
     { id: "Sifilis", title: "Afinal, o que transmite a sífilis? Beijo e sexo oral passam a bactéria?", image: Imagem7, description: "A sífilis é uma infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: Primária, secundária e terciária." },
     { id: "HIV", title: "AIDS/HIV", image: Imagem3, description: "HIV é o vírus da imunodeficiência humana, que pode ser transmitido através do contato sexual desprotegido com uma pessoa contaminada com esse vírus, ou ainda pelo compartilhamento de agulhas ou passado da mãe para o bebê na gravidez ou amamentação." },
-    { id: "Hepatite_Viral", title: "HEPATITE VIRAL", image: Imagem5, description: "Inflamação do fígado que, na maioria dos casos, é causada por vírus, porém também pode acontecer como consequência do uso indiscriminado de medicamentos, do consumo excessivo de bebidas alcoólicas ou devido a uma alteração autoimune." },
+    { id: "Hepatite_Viral", title: "Hepatite viral", image: Imagem5, description: "Inflamação do fígado que, na maioria dos casos, é causada por vírus, porém também pode acontecer como consequência do uso indiscriminado de medicamentos, do consumo excessivo de bebidas alcoólicas ou devido a uma alteração autoimune." },
   ];
 
   return (

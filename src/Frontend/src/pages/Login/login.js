@@ -91,7 +91,7 @@ function Login(){
 
   const handleLoginClick = (e) => {
     e.preventDefault();
-    navigate('/Usuario');
+    navigate('/Area_Do_Usuario');
   };
     return(
         <div>

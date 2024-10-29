@@ -30,7 +30,7 @@
     },
     {
         "id":"Herpes_Genital",
-        "title": "HERPES GENITAL",
+        "title": "Herpes genital",
         "subtitle": "Infecção sexualmente transmissível causada pelo vírus herpes simplex e que provoca dor, coceira e feridas na área genital.",
         "image": "image1",
         "content": [
@@ -59,7 +59,7 @@
     },
     {
         "id":"Clamidia",
-        "title": "CLAMÍDIA",
+        "title": "Clamídia",
         "subtitle": "Clamídia é uma infecção sexualmente transmissível (IST) causada pela bactéria Chlamydia trachomatis.",
         "image": "image4",
         "content": [
@@ -88,7 +88,7 @@
     },
     {
         "id":"Gonorreia",
-        "title": "GONORREIA",
+        "title": "Gonorreia",
         "subtitle": "Infecção sexualmente transmissível causada pelo vírus herpes simplex e que provoca dor, coceira e feridas na área genital.",
         "image": "image6",
         "content": [
@@ -125,7 +125,7 @@
     },
     {
         "id":"Hepatite_Viral",
-        "title": "HEPATITE VIRAL",
+        "title": "Hepatite viral",
         "subtitle": "É uma infecção que atinge o fígado, causando alterações leves, moderadas ou graves. Na maioria das vezes são infecções silenciosas, ou seja, não apresentam sintomas.",
         "image": "image2",
         "content": [
@@ -154,7 +154,7 @@
     },
     {
         "id":"Sifilis",
-        "title": "SÍFILIS",
+        "title": "Sífilis",
         "subtitle": "Infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: primária, secundária e terciária.",
         "image": "image7",
         "content": [
@@ -203,7 +203,7 @@
     },
     {
         "id":"HPV_GENITAL",
-        "title": "HPV GENITAL",
+        "title": "HPV genital",
         "subtitle": "Infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: primária, secundária e terciária.",
         "image": "image2",
         "content": [

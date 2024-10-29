@@ -116,7 +116,7 @@ function Comentarios() {
         <div style={{ display: "flex" }}>
           <Img src="https://placehold.co/80x80/000000/FFFFFF.png" />
           <InputField
-            placeholder="Digite o seu comentario aqui"
+            placeholder="Digite o seu comentário aqui"
             onChange={handleFeedbackChange}
             value={feedback}
             type="text"

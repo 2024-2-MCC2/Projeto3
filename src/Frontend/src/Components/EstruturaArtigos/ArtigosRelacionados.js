@@ -59,4 +59,6 @@ function ArtigosRelacionados(){
     )
 }
 
+
+
 export default ArtigosRelacionados;

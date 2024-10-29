@@ -96,7 +96,7 @@ function Buscar_Ajuda() {
             <QuemSomosImg src = "https://placehold.co/700x300/000000/FFFFFF.png"></QuemSomosImg>
             <div> 
             <SomosTitulo>Precisa de Ajuda?</SomosTitulo>
-            <SomosSubTitulo>Venha ver o que você pode fazer caso queira fazer exames</SomosSubTitulo>
+            <SomosSubTitulo>Venha ver o que você pode fazer para se ajudar ou ajudar alguém</SomosSubTitulo>
             <QuemSomosTxt>ISTs são infecções cujas quais deve-se sempre tomar os devidos cuidados e fazer exames recorrentes para saber o estado do corpo.</QuemSomosTxt>
             <QuemSomosTxt>Os médicos especializados em Infecções Sexualmente Transmissíveis, geralmente são diagnosticadas por dermatologista ou urologista, no caso dos homens ou o ginecologista no caso das mulheres.</QuemSomosTxt>
             <QuemSomosTxt>Reunimos algumas ongs que lutam por essa causa:</QuemSomosTxt>

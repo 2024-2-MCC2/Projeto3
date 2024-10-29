@@ -12,6 +12,7 @@ import GravidezAdoles from "./pages/GravidezAdolesInpa";
 import VacinaGravidez from "./pages/Vacina_Gravidez";
 import Login from "./pages/Login/login";
 import EstruturaArtigos from "./Components/EstruturaArtigos";
+import AreaUser from "./pages/Login/AreaUser";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/Vacina_Gravidez" element = {<VacinaGravidez/>}/>
           <Route path="/Login" element ={<Login/>}/>
           <Route path="/Artigo/:id" element={<EstruturaArtigos/>}/>
+          <Route path="/Area_Do_Usuario" element={<AreaUser/>}/>
 
         </Routes>
       </Router>
