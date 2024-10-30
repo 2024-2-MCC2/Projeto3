@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import Imagem1 from "../assets/DSC_2706.JPG"
+import Imagem2 from "../assets/DSC_2712.JPG"
 import { Route } from "react-router-dom";
 
 const SomosTitulo = styled.h1`
@@ -27,6 +29,8 @@ border-radius: 15px;
 padding-left: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
+width: 600px;
+height: 400px;
 `
 
 const QuemSomosTxt = styled.p`
@@ -40,7 +44,7 @@ function Quem_Somos() {
         <body>
             <Header/>
             <QuemSomosEstrutura>
-            <QuemSomosImg src = "https://placehold.co/700x300/000000/FFFFFF.png"></QuemSomosImg>
+            <QuemSomosImg src = {Imagem1}></QuemSomosImg>
             <div> 
             <SomosTitulo>Grupo Enrolados</SomosTitulo>
             <SomosSubTitulo>Projeto Interdisciplinar - Programação WEB</SomosSubTitulo>
