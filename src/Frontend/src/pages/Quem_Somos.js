@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import Imagem1 from "../assets/DSC_2706.JPG"
-import Imagem2 from "../assets/DSC_2712.JPG"
 import { Route } from "react-router-dom";
 
 const SomosTitulo = styled.h1`
