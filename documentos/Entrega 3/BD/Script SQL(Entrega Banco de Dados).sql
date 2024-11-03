@@ -1,7 +1,7 @@
 create database enrolados;
 use enrolados;
 
-create table usuário(
+create table usuario(
 IdUsuario integer primary key auto_increment,
 DatadeNascimento date not null,
 NomeUsuario varchar(100) not null,
