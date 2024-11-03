@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import styled from 'styled-components'
-import Header from '../../Components/Header/Header'
-import Footer from '../../Components/Footer/Footer'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
+import axios from 'axios';
 
 const LoginPageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:30px;
-`
+  margin: 30px;
+`;
 
 const LoginFormContainer = styled.div`
   background-color: #fff;
@@ -18,12 +19,12 @@ const LoginFormContainer = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
-`
+`;
 
 const Title = styled.h1`
   text-align: center;
   margin-bottom: 20px;
-`
+`;
 
 const Input = styled.input`
   display: block;
@@ -33,13 +34,13 @@ const Input = styled.input`
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-`
+`;
 
 const PasswordWrapper = styled.div`
   position: relative;
   width: 100%;
   margin-bottom: 10px;
-`
+`;
 
 const ToggleButton = styled.button`
   position: absolute;
@@ -52,7 +53,7 @@ const ToggleButton = styled.button`
   cursor: pointer;
   font-size: 14px;
   padding: 0;
-`
+`;
 
 const Button = styled.button`
   width: 100%;
@@ -67,7 +68,7 @@ const Button = styled.button`
   &:hover {
     background-color: #0056b3;
   }
-`
+`;
 
 const Linke = styled(Link)`
   display: block;
@@ -78,49 +79,61 @@ const Linke = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
-`
+`;
 
-function Login(){
-    const [showPassword, setShowPassword] = useState(false)
-  const [password, setPassword] = useState('')
-  const navigate = useNavigate()
+function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
 
-  const handleLoginClick = (e) => {
+  const handleLoginClick = async (e) => {
     e.preventDefault();
-    navigate('/Area_Do_Usuario');
+    setErrorMessage('');
+    try {
+      const response = await axios.post('http://localhost:5000/api/users/login', { email, password });
+      const { user } = response.data;
+      localStorage.setItem('user', JSON.stringify(user));
+      navigate('/Area_Do_Usuario');
+    } catch (error) {
+      const errorResponse = error.response ? error.response.data.message : 'An unexpected error occurred';
+      setErrorMessage(errorResponse);
+      console.error('Login failed:', errorResponse);
+    }
   };
-    return(
-        <div>
-            <Header/>
-            <>
-    <LoginPageContainer>
-      <LoginFormContainer>
-        <Title>Login</Title>
-        <Input type="text" placeholder="Login" />
-        <PasswordWrapper>
-          <Input
-            type={showPassword ? 'text' : 'password'}
-            placeholder="Senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <ToggleButton onClick={togglePasswordVisibility}>
-            {showPassword ? 'Esconder' : 'Mostrar'}
-          </ToggleButton>
-        </PasswordWrapper>
-        <Button type="submit" onClick={handleLoginClick}>Entrar</Button>
-        <Linke>Esqueceu a senha?</Linke>
-        <Linke to={"/Cadastro"}>Cadastrar-se</Linke>
-      </LoginFormContainer>
-    </LoginPageContainer>
-    </>
-    <Footer/>
-        </div>
-    )
+
+  return (
+    <div>
+      <Header />
+      <LoginPageContainer>
+        <LoginFormContainer>
+          <Title>Login</Title>
+          {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
+          <Input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <PasswordWrapper>
+            <Input
+              type={showPassword ? 'text' : 'password'}
+              placeholder="Senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <ToggleButton onClick={togglePasswordVisibility}>
+              {showPassword ? 'Esconder' : 'Mostrar'}
+            </ToggleButton>
+          </PasswordWrapper>
+          <Button type="submit" onClick={handleLoginClick}>Entrar</Button>
+          <Linke>Esqueceu a senha?</Linke>
+          <Linke to="/Cadastro">Cadastrar-se</Linke>
+        </LoginFormContainer>
+      </LoginPageContainer>
+      <Footer />
+    </div>
+  );
 }
 
-export default Login
+export default Login;

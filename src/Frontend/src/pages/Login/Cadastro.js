@@ -83,6 +83,11 @@ const Button = styled.button`
 
 function Cadastro() {
   const [image, setImage] = useState(User);
+  const [name, setName] = useState("");
+  const [dob, setDob] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [imageFile, setImageFile] = useState(null);
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -91,7 +96,36 @@ function Cadastro() {
       reader.onloadend = () => {
         setImage(reader.result);
       };
+      setImageFile(file);
       reader.readAsDataURL(file);
+    }
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append("email", email);
+    formData.append("password", password);
+    formData.append("nome", name);
+    formData.append("datadeNascimento", dob);
+    formData.append("profileImage", imageFile);
+
+    try {
+      const response = await fetch("http://localhost:5000/api/users/register", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Error response:', errorText);
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.error("Error registering user:", error);
     }
   };
 
@@ -115,11 +149,30 @@ function Cadastro() {
               />
             </ImgContainer>
           </ImgWrapper>
-          <Input placeholder="Nome" />
-          <Input type="date" placeholder="Data de nascimento" />
-          <Input type="email" placeholder="E-Mail" />
-          <Input type="password" placeholder="Senha" />
-          <Button>Cadastrar-se</Button>
+          <Input
+            placeholder="Nome"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            type="date"
+            placeholder="Data de nascimento"
+            value={dob}
+            onChange={(e) => setDob(e.target.value)}
+          />
+          <Input
+            type="email"
+            placeholder="E-Mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <Input
+            type="password"
+            placeholder="Senha"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <Button onClick={handleSubmit}>Cadastrar-se</Button>
         </BodyDiv>
       </CadastroDiv>
       <Footer />
