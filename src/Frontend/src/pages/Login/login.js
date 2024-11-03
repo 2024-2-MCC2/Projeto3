@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
@@ -69,7 +69,7 @@ const Button = styled.button`
   }
 `
 
-const Link = styled.a`
+const Linke = styled(Link)`
   display: block;
   text-align: center;
   margin-top: 10px;
@@ -113,8 +113,8 @@ function Login(){
           </ToggleButton>
         </PasswordWrapper>
         <Button type="submit" onClick={handleLoginClick}>Entrar</Button>
-        <Link href="#">Esqueceu a senha?</Link>
-        <Link href="#">Cadastrar-se</Link>
+        <Linke>Esqueceu a senha?</Linke>
+        <Linke to={"/Cadastro"}>Cadastrar-se</Linke>
       </LoginFormContainer>
     </LoginPageContainer>
     </>

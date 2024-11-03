@@ -85,7 +85,7 @@ function EstruturaArtigos() {
             </BackgroundArtigo>
             <h2>Artigos Relacionados</h2>
             <ArtigosRelacionados articles={article.relatedArticles} />
-            <h2>Comentarios</h2>
+            <h2>Comentários</h2>
             <Comentarios/>
         </EstruturaContainer>
         <Footer/>

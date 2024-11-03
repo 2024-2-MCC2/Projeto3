@@ -13,6 +13,7 @@ import VacinaGravidez from "./pages/Vacina_Gravidez";
 import Login from "./pages/Login/login";
 import EstruturaArtigos from "./Components/EstruturaArtigos";
 import AreaUser from "./pages/Login/AreaUser";
+import Cadastro from "./pages/Login/Cadastro";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
           <Route path="/Login" element ={<Login/>}/>
           <Route path="/Artigo/:id" element={<EstruturaArtigos/>}/>
           <Route path="/Area_Do_Usuario" element={<AreaUser/>}/>
-
+          <Route path="/Cadastro" element={<Cadastro/>}/>
         </Routes>
       </Router>
     </div>
