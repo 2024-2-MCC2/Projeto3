@@ -23,6 +23,12 @@ const BodyDiv = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
+const SuccessMessage = styled.div`
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+`;
+
 const ImgWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -88,6 +94,7 @@ function Cadastro() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [imageFile, setImageFile] = useState(null);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -124,8 +131,10 @@ function Cadastro() {
 
       const result = await response.json();
       console.log(result);
+      setSuccessMessage("Usuário cadastrado com sucesso");
     } catch (error) {
       console.error("Error registering user:", error);
+      setSuccessMessage("");
     }
   };
 
@@ -173,6 +182,7 @@ function Cadastro() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button onClick={handleSubmit}>Cadastrar-se</Button>
+          {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
         </BodyDiv>
       </CadastroDiv>
       <Footer />

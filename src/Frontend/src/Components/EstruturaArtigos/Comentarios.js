@@ -71,6 +71,10 @@ const ComentarioContainer = styled.div`
 const ConteudoComentario = styled.p`
   grid-area: c;
   max-width: 500px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  max-height: 100px;
+  text-overflow: ellipsis;
 `;
 
 const NomeUser = styled.h1`
@@ -83,6 +87,8 @@ const DataHoraComentario = styled.p`
   grid-area: d;
   color: grey;
 `;
+
+
 
 const ErrorMessage = styled.p`
   color: red;
@@ -202,6 +208,7 @@ function Comentarios() {
             <DataHoraComentario>Comentado às: {formatDate(comentario.date)}</DataHoraComentario>
             <Img style={{ gridArea: "i" }} src={imgSrc} alt="User Avatar" />
             <ConteudoComentario>{comentario.message}</ConteudoComentario>
+            {/* <button>Deletar</button> */}
           </ComentarioContainer>
         );
       })}

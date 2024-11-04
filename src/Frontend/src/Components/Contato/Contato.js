@@ -82,8 +82,32 @@ function Contato() {
 
   function Submit(event) {
     event.preventDefault();
-    alert('Formulário enviado'); 
+    
+    const name = event.target[0].value;
+    const email = event.target[1].value;
+    const subject = event.target[2].value;
+    const feedback = event.target[3].value;
+  
+    fetch('http://localhost:5000/api/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, subject, feedback }),
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('Formulário enviado com sucesso!');
+      } else {
+        alert('Erro ao enviar o formulário.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Erro ao enviar o formulário.');
+    });
   }
+  
 
   return (
     <ContatoContainer>
