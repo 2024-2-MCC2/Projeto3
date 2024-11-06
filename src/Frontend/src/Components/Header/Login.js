@@ -11,6 +11,7 @@ const LoginContainer = styled.div`
 `;
 
 const IMGLogin = styled.img`
+  padding-right: 20px;
   border-radius: 40px;
   max-width: 50px;
   max-height: 50px;

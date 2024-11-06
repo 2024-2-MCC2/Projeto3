@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import OngImage1 from "../../assets/Liberta_FullCollor_RGB_Prancheta-1-pu0yukvesk7sv176mc3sue9hcovb69ikjsf378ldcg.png"
+import OngImage2 from "../../assets/Abia-LOGO-2.png"
+import OngImage3 from "../../assets/Patrícia_Galvão_LOGO.jpg"
 
 const MainCardContainer = styled.div`
   display: flex;
@@ -50,6 +52,23 @@ const ButtonCard = styled(Link)`
   color: black;
 `
 
+const ButtonCardPopup = styled.a`
+  border: 1px solid grey; 
+  margin-top: 15px;
+  align-self: center;
+  width: 60%;
+  height: 30px;
+  background-color: #4ec746;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 5px;
+`;
+
 const PopupBackground = styled.div`
   position: fixed;
   top: 0;
@@ -76,7 +95,8 @@ const PopupCard = styled.div`
 `
 
 const PopUpText = styled.div`
-padding-left: 35px;
+padding-left: 5px;
+padding-right: 0px;
 `
 
 const CloseButton = styled.button`
@@ -110,14 +130,14 @@ function OngsCard() {
           <ImgCard src={OngImage1} />
           <ButtonCard>Saiba mais</ButtonCard>
         </CardContainer>
-        <CardContainer onClick={() => handleCardClick('Ong 2', 'https://placehold.co/300x250/000000/FFFFFF.png', 'A ong x faz tal coisa y')}>
-          <TituloCard>Ong 2</TituloCard>
-          <ImgCard src="https://placehold.co/300x250/000000/FFFFFF.png" />
+        <CardContainer onClick={() => handleCardClick('ABIA', '	http://localhost:3000/static/media/R.9929b23d53a8df706e27.jfif', 'Fundada em 1987, trabalha na promoção dos direitos de pessoas vivendo com HIV/AIDS e na conscientização sobre a epidemia de HIV. Essa promoção ocorre por meio de campanhas, pesquisas e atividades educativas.', 'https://abiaids.org.br/')}>
+          <TituloCard>ABIA AIDS</TituloCard>
+          <ImgCard src={OngImage2}/>
           <ButtonCard>Saiba mais</ButtonCard>
         </CardContainer>
-        <CardContainer onClick={() => handleCardClick('Ong 3', 'https://placehold.co/300x250/000000/FFFFFF.png', 'A ong x faz tal coisa y')}>
-          <TituloCard>Ong 3</TituloCard>
-          <ImgCard src="https://placehold.co/300x250/000000/FFFFFF.png" />
+        <CardContainer onClick={() => handleCardClick('Ong 3', 'http://localhost:3000/static/media/Patr%C3%ADcia_Galv%C3%A3o_LOGO.833510d0416903dbb47e.jpg', 'Atua na promoção dos direitos das mulheres, incluindo temas como saúde sexual e reprodutiva. A organização também faz campanhas e pesquisas focadas em gênero, sexualidade, violência e abuso contra a mulher.', 'https://agenciapatriciagalvao.org.br/')}>
+          <TituloCard>Agência Patrícia Galvão</TituloCard>
+          <ImgCard src={OngImage3} />
           <ButtonCard>Saiba mais</ButtonCard>
         </CardContainer>
       </MainCardContainer>
@@ -130,7 +150,7 @@ function OngsCard() {
             <PopUpText>
             <h1>{popupContent.title}</h1>
             <p>{popupContent.text}</p>
-            <ButtonCard as="a" href={popupContent.externalLink} target="_blank" rel="noopener noreferrer">Saiba Mais</ButtonCard>
+            <ButtonCardPopup href={popupContent.externalLink} target="_blank" rel="noopener noreferrer">Saiba Mais</ButtonCardPopup>
             </PopUpText>
           </PopupCard>
         </PopupBackground>

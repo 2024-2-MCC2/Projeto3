@@ -143,6 +143,7 @@ function Cadastro() {
       <Header />
       <CadastroDiv>
         <BodyDiv>
+          <h1>Cadastro</h1>
           <ImgWrapper>
             <ImgContainer>
               <label htmlFor="file-upload">

@@ -55,11 +55,11 @@ const TextoRestante = styled.p`
 
 const ComentarioContainer = styled.div`
   display: grid;
-  grid-template-columns: 0.3fr 1fr 0.8fr;
+  grid-template-columns: 0.3fr 1fr 0.8fr 0.2fr;
   grid-template-rows: 0.1fr 1fr;
   grid-template-areas:
-    "i n d"
-    "i c c";
+    "i n d d"
+    "i c c b";
   margin: 40px;
   border: solid grey 2px;
   border-radius: 10px;
@@ -88,11 +88,24 @@ const DataHoraComentario = styled.p`
   color: grey;
 `;
 
-
-
 const ErrorMessage = styled.p`
   color: red;
   text-align: center;
+`;
+
+const DeleteButton = styled.button`
+  grid-area: b;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darkred;
+  }
 `;
 
 const formatDate = (dateString) => {
@@ -121,7 +134,7 @@ function Comentarios() {
       try {
         const response = await fetch(`http://localhost:5000/api/comments/${id}`);
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`Failed to load comments: HTTP ${response.status}`);
         }
         const data = await response.json();
         console.log("Fetched comments:", data);
@@ -166,18 +179,60 @@ function Comentarios() {
           },
           body: JSON.stringify(newComment),
         });
+
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
         }
 
-        setComentarios(prevComments => [...prevComments, newComment]);
+        const data = await response.json();
+        console.log("Successfully posted comment:", data);
+       
+        const postedComment = { ...newComment, commentId: data.commentId };
+
+        setComentarios((prevComments) => {
+          const updatedComments = [postedComment, ...prevComments];
+          return updatedComments.sort((a, b) => new Date(b.date) - new Date(a.date));
+        });
+
         setFeedback("");
         setIndexAtual(300);
       } catch (error) {
         console.error("Error posting comment:", error);
-        setError(error.message);
+        setError(error.message || "Failed to post comment.");
       }
+    }
+  };
+
+  const handleDelete = async (commentId) => {
+    if (!user) {
+      setError("You must be logged in to delete comments.");
+      return;
+    }
+
+    try {
+      console.log("Attempting to delete comment with ID:", commentId);
+
+      if (commentId === undefined || commentId === null) {
+        setError("Invalid comment ID.");
+        return;
+      }
+
+      const response = await fetch(`http://localhost:5000/api/comments/${commentId}/${user.IdUsuario}`, {
+        method: "DELETE",
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
+      }
+
+      console.log("Successfully deleted comment with ID:", commentId);
+
+      setComentarios(comentarios.filter(comment => comment.commentId !== commentId));
+    } catch (error) {
+      console.error("Error deleting comment:", error);
+      setError(error.message || "Failed to delete comment.");
     }
   };
 
@@ -199,16 +254,22 @@ function Comentarios() {
       </FormContainer>
 
       {comentarios.map((comentario, index) => {
-        const imgSrc = comentario.userImage 
-          ? `data:image/jpeg;base64,${comentario.userImage}` 
+        const imgSrc = comentario.userImage
+          ? `data:image/jpeg;base64,${comentario.userImage}`
           : "https://placehold.co/80x80/000000/FFFFFF.png";
+
         return (
-          <ComentarioContainer key={index}>
+          <ComentarioContainer key={comentario.commentId}>
             <NomeUser>{comentario.userName} comentou:</NomeUser>
             <DataHoraComentario>Comentado às: {formatDate(comentario.date)}</DataHoraComentario>
             <Img style={{ gridArea: "i" }} src={imgSrc} alt="User Avatar" />
             <ConteudoComentario>{comentario.message}</ConteudoComentario>
-            {/* <button>Deletar</button> */}
+
+            {comentario.userId === user?.IdUsuario && (
+              <DeleteButton onClick={() => handleDelete(comentario.commentId)}>
+                Deletar
+              </DeleteButton>
+            )}
           </ComentarioContainer>
         );
       })}

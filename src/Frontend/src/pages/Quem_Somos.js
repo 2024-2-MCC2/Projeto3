@@ -3,6 +3,7 @@ import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import Imagem1 from "../assets/DSC_2706.JPG"
 import { Route } from "react-router-dom";
+import Desenvolvedores from "../Components/QuemSomos/Desenvolvedores";
 
 const SomosTitulo = styled.h1`
 font-family: Arial, Helvetica, sans-serif;
@@ -28,8 +29,8 @@ border-radius: 15px;
 padding-left: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
-width: 600px;
-height: 400px;
+width: 750px;
+height: 475px;
 `
 
 const QuemSomosTxt = styled.p`
@@ -50,7 +51,8 @@ function Quem_Somos() {
             <QuemSomosTxt>Integrantes do grupo: Iury Xavier, Lilian Conde, Marcus Duque e Murilo Vieira</QuemSomosTxt>
             <QuemSomosTxt>O Projeto começou como uma forma de conscientizar as pessoas sobre a educação e saúde sexual. Usando como base a ODS 3 e também o tópico 3.7, criamos esse site para falar sobre a saúde sexual.</QuemSomosTxt>
             </div>
-            </QuemSomosEstrutura>  
+            </QuemSomosEstrutura>
+            <Desenvolvedores></Desenvolvedores>
             <Footer/>
         </body>
     )

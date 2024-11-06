@@ -112,7 +112,7 @@ function Carrossel() {
   function TextoAtual(index) {
     switch (index) {
       case 0:
-        return "DSTs/ISTs: conheça as 6 mais comuns e como se prevenir.";
+        return "A invisibilidade da violência sexual na nossa sociedade";
       case 1:
         return "Entenda os impactos da gravidez na adolescência";
       case 2:
@@ -125,7 +125,7 @@ function Carrossel() {
   function Linkeatual(index) {
     switch (index) {
       case 0:
-        return "/DSTs_ISTs";
+        return "/Artigo/Violencia_Sexual";
       case 1:
         return "/Impactos_Gravidez_Adolescencia";
       case 2:
