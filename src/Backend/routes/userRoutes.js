@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const multer = require('multer');
 const path = require('path');
 const db = require('../db');
+const nodemailer = require('nodemailer');
 const router = express.Router();
 
 const storage = multer.diskStorage({
@@ -10,11 +11,19 @@ const storage = multer.diskStorage({
         cb(null, path.join(__dirname, '..', '..', 'Frontend', 'public', 'uploads'));
     },
     filename: (req, file, cb) => {
-        cb(null, Date.now() + path.extname(file.originalname))
+        cb(null, Date.now() + path.extname(file.originalname));
     },
 });
 
 const upload = multer({ storage });
+
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.EM_ORIGIN,
+        pass: process.env.EM_PASSWORD, 
+    },
+});
 
 // Cadastro
 router.post('/register', upload.single('profileImage'), async (req, res) => {
@@ -23,7 +32,6 @@ router.post('/register', upload.single('profileImage'), async (req, res) => {
     const imagemPath = req.file ? `/uploads/${req.file.filename}` : null;
 
     if (!email || !password || !nome || !datadeNascimento) {
-        console.log(req.body);
         return res.status(400).json({ error: 'All fields are required' });
     }
 
@@ -40,8 +48,18 @@ router.post('/register', upload.single('profileImage'), async (req, res) => {
                 }
             );
         });
-        
-        res.status(201).json({ message: 'User registered successfully' });
+
+        const mailOptions = {
+            from: process.env.EM_ORIGIN,
+            to: email,
+            subject: 'Bem vindo ao Enrolados!!',
+            text: `Querido(a) ${nome},\n\nObrigado por se cadastrar na nossa plataforma. Estamos animados por ter você como membro\n\nAtenciosamente,\nEnrolados`,
+        };
+
+        await transporter.sendMail(mailOptions);
+
+        res.status(201).json({ message: 'User registered successfully and email sent!' });
+
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: err.message });
