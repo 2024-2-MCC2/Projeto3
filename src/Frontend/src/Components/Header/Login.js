@@ -11,20 +11,21 @@ const LoginContainer = styled.div`
 `;
 
 const IMGLogin = styled.img`
-  padding-right: 20px;
-  border-radius: 40px;
-  max-width: 50px;
-  max-height: 50px;
-  transition: all 0.5s ease 0s;
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #4caf50;
+  object-fit: cover;
   &:hover {
-    border-color: #0d2329;
+    border-color: darkgreen;
   }
 `;
 
 const Dropdown = styled.div`
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: 55px;
+  right: -5px;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 4px;

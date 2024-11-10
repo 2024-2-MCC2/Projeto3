@@ -15,8 +15,8 @@ const FormContainer = styled.form`
 
 const Img = styled.img`
   border-radius: 40px;
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   transition: all 0.5s ease 0s;
   margin-right: 30px;
   align-self: center;
