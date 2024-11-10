@@ -93,8 +93,10 @@ function Cadastro() {
   const [dob, setDob] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState(""); // New state for confirmation password
   const [imageFile, setImageFile] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState(""); // New state for error message
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -110,6 +112,15 @@ function Cadastro() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    // Validate if passwords match
+    if (password !== confirmPassword) {
+      setErrorMessage("As senhas não correspondem!");
+      return;
+    }
+
+    setErrorMessage(""); // Clear error if passwords match
+
     const formData = new FormData();
     formData.append("email", email);
     formData.append("password", password);
@@ -182,6 +193,13 @@ function Cadastro() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+          <Input
+            type="password"
+            placeholder="Confirmar Senha"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)} // Handle confirmation password
+          />
+          {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>} {/* Display error message */}
           <Button onClick={handleSubmit}>Cadastrar-se</Button>
           {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
         </BodyDiv>
