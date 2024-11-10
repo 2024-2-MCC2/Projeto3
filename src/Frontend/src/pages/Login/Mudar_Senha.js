@@ -1,6 +1,6 @@
-// EsqueceuSenha.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { useParams } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 
@@ -43,21 +43,34 @@ const Button = styled.button`
     }
 `;
 
-function EsqueceuSenha() {
-    const [email, setEmail] = useState("");
+function MudarSenha() {
+    const { token } = useParams(); 
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
+
+    useEffect(() => {
+        if (!token) {
+            setError("Token inválido");
+        }
+    }, [token]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if (password !== confirmPassword) {
+            setError("As senhas não são iguais");
+            return;
+        }
+
         try {
-            const response = await fetch("http://localhost:5000/api/users/forgot-password", {
+            const response = await fetch("http://localhost:5000/api/users/Mudar_Senha", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({ password, token }),
             });
 
             const data = await response.json();
@@ -79,14 +92,20 @@ function EsqueceuSenha() {
             <Header />
             <Container>
                 <Form>
-                    <h2>Esqueci a senha</h2>
+                    <h2>Nova Senha</h2>
                     <Input
-                        type="email"
-                        placeholder="Insira o seu email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        type="password"
+                        placeholder="Insira a sua nova senha"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                     />
-                    <Button onClick={handleSubmit}>Enviar o link de recuperação</Button>
+                    <Input
+                        type="password"
+                        placeholder="Confirme a sua nova senha"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                    />
+                    <Button onClick={handleSubmit}>Mudar a senha</Button>
                     {message && <div style={{ color: "green", marginTop: "10px" }}>{message}</div>}
                     {error && <div style={{ color: "red", marginTop: "10px" }}>{error}</div>}
                 </Form>
@@ -96,4 +115,4 @@ function EsqueceuSenha() {
     );
 }
 
-export default EsqueceuSenha;
+export default MudarSenha;

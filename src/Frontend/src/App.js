@@ -11,6 +11,7 @@ import EstruturaArtigos from "./Components/EstruturaArtigos";
 import AreaUser from "./pages/Login/AreaUser";
 import Cadastro from "./pages/Login/Cadastro";
 import EsqueceuSenha from "./pages/Login/Esqueceu_Senha";
+import MudarSenha from "./pages/Login/Mudar_Senha";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Area_Do_Usuario" element={<AreaUser/>}/>
           <Route path="/Cadastro" element={<Cadastro/>}/>
           <Route path="/Esqueceu_Senha" element={<EsqueceuSenha/>}/>
+          <Route path="/Mudar_Senha/:token" element={<MudarSenha/>}/>
         </Routes>
       </Router>
     </div>

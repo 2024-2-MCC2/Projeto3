@@ -127,7 +127,7 @@ function Login() {
             </ToggleButton>
           </PasswordWrapper>
           <Button type="submit" onClick={handleLoginClick}>Entrar</Button>
-          <Linke>Esqueceu a senha?</Linke>
+          <Linke to="/Esqueceu_Senha">Esqueceu a senha?</Linke>
           <Linke to="/Cadastro">Cadastrar-se</Linke>
         </LoginFormContainer>
       </LoginPageContainer>
