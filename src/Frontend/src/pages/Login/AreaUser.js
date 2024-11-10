@@ -56,7 +56,7 @@ function UserProfile() {
         {user ? (
           <>
             <ProfileImage 
-              src={user.ImagemUsuario ? `data:image/jpeg;base64,${user.ImagemUsuario}` : 'defaultImagePath.jpg'} 
+              src={`http://localhost:3000${user.ImagemUsuario}`} 
               alt="Profile" 
             />
             <UserInfo>

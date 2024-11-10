@@ -167,7 +167,7 @@ function Comentarios() {
         articleId: id,
         userId: user.IdUsuario,
         userName: user.NomeUsuario,
-        userImage: user.ImagemUsuario ? user.ImagemUsuario.toString('base64') : null,
+        userImage: user.ImagemUsuario ? user.ImagemUsuario : null,
         date: new Date().toISOString(),
       };
 
@@ -241,7 +241,7 @@ function Comentarios() {
       {error && <ErrorMessage>{error}</ErrorMessage>}
       <FormContainer onSubmit={handleSubmit}>
         <div style={{ display: "flex" }}>
-          <Img src={user ? `data:image/jpeg;base64,${user.ImagemUsuario}` : "https://placehold.co/80x80/000000/FFFFFF.png"} />
+          <Img src={user ? `http://localhost:3000${user.ImagemUsuario}` : "https://placehold.co/80x80/000000/FFFFFF.png"} />
           <InputField
             placeholder="Digite o seu comentário aqui"
             onChange={handleFeedbackChange}
@@ -253,9 +253,9 @@ function Comentarios() {
         <TextoRestante>Restante: {indexAtual}/300</TextoRestante>
       </FormContainer>
 
-      {comentarios.map((comentario, index) => {
+      {comentarios.map((comentario) => {
         const imgSrc = comentario.userImage
-          ? `data:image/jpeg;base64,${comentario.userImage}`
+          ? `http://localhost:3000${comentario.userImage}`
           : "https://placehold.co/80x80/000000/FFFFFF.png";
 
         return (

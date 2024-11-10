@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import SetaDireita from './SetaDireita.png';
 import SetaEsquerda from './SetaEsquerda.png';
 import PrimeiraImagem from './img/dsts(950x350).jpg';
-import SegundaImagem from './img/Ensaio_Grávida.jpg';
-import TerceiraImagem from './img/vaccine-1.jpg';
+import SegundaImagem from './img/Ensaio_Grávida.png';
+import TerceiraImagem from './img/vaccine-1.png';
 import { Link } from 'react-router-dom';
 
 // CSS do Carrossel
@@ -127,9 +127,9 @@ function Carrossel() {
       case 0:
         return "/Artigo/Violencia_Sexual";
       case 1:
-        return "/Impactos_Gravidez_Adolescencia";
+        return "/Artigo/Impactos_Gravidez_Adolescencia";
       case 2:
-        return "/Vacina_Gravidez";
+        return "/Artigo/Vacina_Gravidez";
       default:
         return "/";
     }

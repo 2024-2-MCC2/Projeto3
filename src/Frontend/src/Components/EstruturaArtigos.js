@@ -40,16 +40,28 @@ const TextoCorpo = styled.p`
 `;
 
 const BackgroundArtigo = styled.div`
-width: 650px;
-margin-top: 20px;
-display: flex;
-flex-direction: column;
-text-align: center;
-align-items: center;
-background-color: white;
-border: 2px solid #ddd;
-border-radius: 20px;
-`
+    width: 650px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+`;
+
+const SpanStyle = styled.span`
+  a {
+    text-decoration: none;
+    color: blue;
+    transition: all ease-in-out 0.3s;
+  }
+
+  a:hover {
+    color: darkblue;
+  }
+`;
 
 function EstruturaArtigos() {
     const { id } = useParams();
@@ -68,27 +80,27 @@ function EstruturaArtigos() {
 
     return (
         <div>
-            <Header/>
-        <EstruturaContainer>
-            <BackgroundArtigo>
-            <TituloArtigo>{article.title}</TituloArtigo>
-            <Subtitulo>{article.subtitle}</Subtitulo>
-            <ImagensArtigo src={require(`./HomeComponents/img/${article.image}.png`)} alt="Article Image" />
-            {article.content.map((section, index) => (
-                <div key={index}>
-                    <TextoCorpo>
-                        <b>{section.heading}</b>
-                        {section.text}
-                    </TextoCorpo>
-                </div>
-            ))}
-            </BackgroundArtigo>
-            <h2>Artigos Relacionados</h2>
-            <ArtigosRelacionados articles={article.relatedArticles} />
-            <h2>Comentários</h2>
-            <Comentarios/>
-        </EstruturaContainer>
-        <Footer/>
+            <Header />
+            <EstruturaContainer>
+                <BackgroundArtigo>
+                    <TituloArtigo>{article.title}</TituloArtigo>
+                    <Subtitulo>{article.subtitle}</Subtitulo>
+                    <ImagensArtigo src={require(`./HomeComponents/img/${article.image}.png`)} alt="Article Image" />
+                    {article.content.map((section, index) => (
+                        <div key={index}>
+                            <TextoCorpo>
+                                <b>{section.heading}</b>
+                                <SpanStyle dangerouslySetInnerHTML={{ __html: section.text }} />
+                            </TextoCorpo>
+                        </div>
+                    ))}
+                </BackgroundArtigo>
+                <h2>Artigos Relacionados</h2>
+                <ArtigosRelacionados articles={article.relatedArticles} />
+                <h2>Comentários</h2>
+                <Comentarios />
+            </EstruturaContainer>
+            <Footer />
         </div>
     );
 }

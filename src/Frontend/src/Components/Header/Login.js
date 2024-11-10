@@ -53,6 +53,12 @@ function Login() {
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('user'));
 
+
+
+  const imgSrc = user && user.ImagemUsuario
+    ? `http://localhost:3000${user.ImagemUsuario}`
+    : User; 
+
   const handleClick = () => {
     if (user) {
       navigate("/Area_Do_Usuario");
@@ -60,8 +66,6 @@ function Login() {
       navigate("/Login");
     }
   };
-
-  const imgSrc = user && user.ImagemUsuario ? `data:image/jpeg;base64,${user.ImagemUsuario}` : User;
 
   return (
     <LoginContainer 

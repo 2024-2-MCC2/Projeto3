@@ -7,8 +7,7 @@ DatadeNascimento date not null,
 NomeUsuario varchar(100) not null,
 SenhaUsuario varchar(255) not null,
 EmailUsuario varchar(50) not null,
-IdadeUsuário integer,
-ImagemUsuario longblob
+ImagemUsuario VARCHAR(255) NULL
 );
 
 create table autor(
