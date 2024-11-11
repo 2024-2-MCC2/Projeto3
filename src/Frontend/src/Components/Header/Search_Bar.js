@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import articles from '../Artigos.json';
-
 
 const SearchBarInput = styled.input`
     height: 30px;
@@ -79,23 +79,47 @@ const ResultSubtitle = styled.p`
 function SearchBar() {
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredArticles, setFilteredArticles] = useState([]);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    
+    const searchBarRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (searchBarRef.current && !searchBarRef.current.contains(event.target)) {
+                setIsDropdownOpen(false);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
 
     const handleSearch = (query) => {
         setSearchQuery(query);
         if (query.trim() === '') {
             setFilteredArticles([]);
+            setIsDropdownOpen(false);
         } else {
             const lowerCaseQuery = query.toLowerCase();
-            const filtered = articles.filter(article => 
+            const filtered = articles.filter(article =>
                 article.title.toLowerCase().includes(lowerCaseQuery) ||
                 article.subtitle.toLowerCase().includes(lowerCaseQuery)
             );
             setFilteredArticles(filtered);
+            setIsDropdownOpen(true);
         }
     };
 
+    const handleArticleClick = () => {
+        setSearchQuery('');
+        setIsDropdownOpen(false);
+    };
+
     return (
-        <SearchBarDiv>
+        <SearchBarDiv ref={searchBarRef}>
             <SearchBarInput
                 type="text"
                 placeholder="Digite a sua busca aqui"
@@ -104,15 +128,22 @@ function SearchBar() {
             />
             <SearchBarButton>Buscar</SearchBarButton>
 
-            {filteredArticles.length > 0 && (
+            {isDropdownOpen && filteredArticles.length > 0 && (
                 <ResultsContainer>
                     {filteredArticles.map((article) => (
-                        <ResultItem key={article.id}>
-                            <ResultContent>
-                                <ResultTitle>{article.title}</ResultTitle>
-                                <ResultSubtitle>{article.subtitle}</ResultSubtitle>
-                            </ResultContent>
-                        </ResultItem>
+                        <Link
+                            key={article.id}
+                            to={`/Artigo/${article.id}`}
+                            style={{ textDecoration: 'none' }}
+                            onClick={handleArticleClick}
+                        >
+                            <ResultItem>
+                                <ResultContent>
+                                    <ResultTitle>{article.title}</ResultTitle>
+                                    <ResultSubtitle>{article.subtitle}</ResultSubtitle>
+                                </ResultContent>
+                            </ResultItem>
+                        </Link>
                     ))}
                 </ResultsContainer>
             )}

@@ -15,7 +15,7 @@ const IMGLogin = styled.img`
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  border: 4px solid #4caf50;
+  /* border: 4px solid #4caf50; */
   object-fit: cover;
   &:hover {
     border-color: darkgreen;
