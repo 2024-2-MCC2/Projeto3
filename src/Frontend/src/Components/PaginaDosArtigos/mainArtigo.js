@@ -7,7 +7,7 @@ import Imagem2 from "../../assets/53151296903_6e06488261_b.jpg"
 import Imagem3 from "../HomeComponents/img/SifilisIMG.jfif"
 import Imagem4 from "../../assets/OIP.jfif"
 import Imagem5 from "../../assets/vacina-butantan.jpg"
-import Imagem6 from "../../assets/educação-sexual.jpg"
+import Imagem6 from "../../assets/Violencia_Sexual.jpg"
 
 const MainArtigoCont = styled.div`
 grid-area: m;
@@ -87,7 +87,7 @@ const H3Cont = styled.h3`
 align-self: flex-end;
 font-size: 30px;
 font-family: Arial, Helvetica, sans-serif;
-
+margin-bottom: 0;
 `
 
 const Imagems = styled.img`
@@ -130,29 +130,29 @@ function MainArtigo() {
                     <Botao to="/Artigo/HIV" onClick={scrollToTop} style={{ gridArea: "b" }}>Mais informações</Botao>
                 </Artigocont>
             </div>
-            <H3Cont>Gravidez na adolescência</H3Cont>
-            <Subtitulo2>1 em cada 5 recém-nascidos no brasil são filhos de uma mãe adolescente. Entenda mais sobre o assunto</Subtitulo2>
+            <H3Cont>Impacto Social</H3Cont>
+            <Subtitulo2>Os impactos sociais em relação a sociedade e a educação sexual.</Subtitulo2>
             <div>
             <Artigocont2>
                     <Imagems style={{ gridArea: "i2"}} src={Imagem4}></Imagems>
                     <H2Cont style={{ gridArea: "h2", textAlign:"right", paddingRight:"30px"}}>Entenda os impactos da gravidez na adolescência</H2Cont>
-                    <Subtitulo style={{ gridArea: "p2" }}>Clamídia é transmitida por meio de contato sexual (anal, oral ou vaginal) ou pela forma congênita (infecção passada da mãe para o bebê durante a gestação) e não pode ser transmitida por meio de transfusão sanguínea.
+                    <Subtitulo style={{ gridArea: "p2" }}>Compreenda as consequências da gravizez na Adolescência, seus riscos, desafios e impactos para a sociedade, saúde, emocional e como afeta a cultura como um todo.
                         </Subtitulo>
-                    <Botao to="/HPV_Genital" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
+                    <Botao to="/Artigo/Impactos_Gravidez_Adolescencia" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
                 </Artigocont2>
                 <Artigocont2>
                     <Imagems style={{ gridArea: "i2"}} src={Imagem5}></Imagems>
                     <H2Cont style={{ gridArea: "h2", textAlign:"right", paddingRight:"30px"}}>Vacinas e gravidez: uma combinação que garante saúde</H2Cont>
-                    <Subtitulo style={{ gridArea: "p2" }}>Clamídia é transmitida por meio de contato sexual (anal, oral ou vaginal) ou pela forma congênita (infecção passada da mãe para o bebê durante a gestação) e não pode ser transmitida por meio de transfusão sanguínea.
+                    <Subtitulo style={{ gridArea: "p2" }}>Entenda como e quais são os benefícios da vacinação à saúde quando é relacionada a gravidez e suas consequências quando há sua ausência e o quão importante é que haja a vacinação em massa e que tenha ainda mais campanhas de vacinação.
                         </Subtitulo>
-                    <Botao to="/HPV_Genital" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
+                    <Botao to="/Artigo/Vacina_Gravidez" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
                 </Artigocont2>
                 <Artigocont2>
                     <Imagems style={{ gridArea: "i2"}} src={Imagem6}></Imagems>
-                    <H2Cont style={{ gridArea: "h2" , textAlign:"right", paddingRight:"30px"}}>A importância da educação sexual nas escolas</H2Cont>
-                    <Subtitulo style={{ gridArea: "p2" }}>Clamídia é transmitida por meio de contato sexual (anal, oral ou vaginal) ou pela forma congênita (infecção passada da mãe para o bebê durante a gestação) e não pode ser transmitida por meio de transfusão sanguínea.
+                    <H2Cont style={{ gridArea: "h2" , textAlign:"right", paddingRight:"30px"}}>A invisibilidade da violência sexual na nossa sociedade</H2Cont>
+                    <Subtitulo style={{ gridArea: "p2" }}>Saiba quais são os estigmas de uma sociedade que é caracterizada pela ausência do combate e de divulgação sobre violência sexual. Portanto, torna mais possível e vulnerável tal delito.
                         </Subtitulo>
-                    <Botao to="/HPV_Genital" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
+                    <Botao to="/Artigo/Violencia_Sexual" onClick={scrollToTop} style={{ gridArea: "b2", marginLeft:"66%"}}>Mais informações</Botao>
                 </Artigocont2>
             </div>
         </MainArtigoCont>

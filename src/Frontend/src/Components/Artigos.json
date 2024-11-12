@@ -24,6 +24,10 @@
             {
                 "heading":"Tratamento:",
                 "text": "O tratamento do HIV e AIDS deve ser feito com orientação do infectologista com o uso de um coquetel de medicamentos antirretrovirais, como dolutegravir, lamivudina e efavirenz, para reduzir a multiplicação de vírus e diminuir a carga viral."
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://brasilescola.uol.com.br/biologia/gravidez-adolescencia.htm' target='_blank'>Gravidez na adolescência: impactos, prevenção - Brasil Escola</a>"
             }
         ],
         "relatedArticles": []
@@ -53,6 +57,14 @@
             {
                 "heading":"Tratamento:",
                 "text": " O vírus herpes simplex tipo 2 não tem cura, porém a infecção pode ser controlada com terapia antiviral. Esse tratamento serve para acelerar a cura das lesões, aliviar os sintomas, impedir complicações e reduzir o risco de transmissão para outros. Além dos medicamentos antivirais, alguns tratamentos caseiros podem ser usados para aliviar a dor dos sintomas, como o banho de assento com água fria. Para as mulheres, o banho de assento com água morna é uma boa opção na hora de urinar; sabões e banho de espuma devem ser evitados. Também é importante manter a área genital seca e limpa, evitar roupa interior apertada; cremes e pomadas não são recomendados. Ao invés disso, opte por ingerir analgésicos e anti-inflamatórios."
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://www.mdsaude.com/doencas-infecciosas/dst/herpes-genital/#sinais-e-sintomas' target='_blank'>Herpes genital: transmissão, sintomas e tratamento</a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://www.cdc.gov/herpes/about/index.html?CDC_AAref_Val=https://www.cdc.gov/std/herpes/stdfact-herpes-detailed.htm' target='_blank'>About Genital Herpes</a>"
             }
         ],
         "relatedArticles": []
@@ -82,6 +94,10 @@
             {
                 "heading":"Tratamento:",
                 "text": " O tratamento para a clamídia deve ser feito com a orientação do ginecologista, urologista ou clínico geral e normalmente envolve o uso de antibióticos, como azitromicina ou doxiciclina. É recomendado manter o tratamento mesmo que não existam mais sintomas aparentes, pois assim é possível garantir que houve a eliminação da bactéria."
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://www.tuasaude.com/clamidia/#google_vignette' target='_blank'>Clamídia: o que é, sintomas, transmissão e tratamento</a>"
             }
         ],
         "relatedArticles": []
@@ -98,7 +114,7 @@
             },
             {
                 "heading": "Sintomas:",
-                "text": "Os principais sintomas da Gonorreia são: dor ou ardor ao urinar, corrimento branco-amarelado semelhante ao pus, dor pélvica, sangramento fora do período menstrual,dor durante o contato íntimo, inchaço ou dor nos testículos, dor de garganta e comprometimento da voz, coceira ou secreção no ânus ou dor ao defecar, dor de garganta ínguas no pescoço ou úlceras ou feridas na época."
+                "text": "Os principais sintomas da gonorreia são: dor ou ardor ao urinar, corrimento branco-amarelado semelhante ao pus, dor pélvica, sangramento fora do período menstrual,dor durante o contato íntimo, inchaço ou dor nos testículos, dor de garganta e comprometimento da voz, coceira ou secreção no ânus ou dor ao defecar, dor de garganta ínguas no pescoço ou úlceras ou feridas na época."
             },
             {
                 "heading": "Formas de transmissão:",
@@ -118,7 +134,15 @@
             },
             {
                 "heading":"Tratamento:",
-                "text": " O vírus herpes simplex tipo 2 não tem cura, porém a infecção pode ser controlada com terpia antiviral. Esse tratamento serve para acelerar a cura das lesões, aliviar os sintomas, impedir complicações e reduzir o risco de transmissão para outros. Além dos medicamentos antivirais alguns tratamentos caseiros podem ser usados para aliviar a dor dos sintomas, como, o banho de assento com água fria, para as mulheres o banho de assento com água morna é uma boa opcção na hora de urinar, sabões e banho de espuma devem ser evitados, também, é importante manter a área genital seca e limpa, evita roupa interior apertada, cremes e pomadas não são recomendados, ao inves disso, opte por ingerir analgésicos e anti-inflamatórios."
+                "text": " A gonorreia pode ser curada com o tratamento certo. È importante que o infecctado tome todos os medicamentos que o médico lhe der para curar sua infecção. Se o tratamento não ocorrer pode causar sérios problemas à saúde como a infertilidade. "
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://www.cdc.gov/gonorrhea/about/index.html' target='_blank'>About Gonorrhea</a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://www.tuasaude.com/gonorreia/' target='_blank'>Gonorreia: o que é, sintomas, transmissão, tipos e tratamento</a>"
             }
         ],
         "relatedArticles": []
@@ -148,6 +172,10 @@
             {
                 "heading":"Tratamento:",
                 "text": "  Há diversas formas para que haja o devido tratamento da hepatite, entre elas, estão: Repouso e hidratação, dieta balanceada, abstinência de álcool, uso de medicamentos e, em alguns casos, o transplante de fígado."
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://www.tuasaude.com/hepatite/' target='_blank'>Hepatite: o que é, sintomas, tipos, causas e tratamento</a>"
             }
         ],
         "relatedArticles": []
@@ -160,7 +188,7 @@
         "content": [
             {
                 "heading": "O que é:",
-                "text": "HIV é o vírus da imunodeficiência humana, que pode ser transmitido através do contato sexual desprotegido com uma pessoa contaminada com esse vírus, ou ainda pelo compartilhamento de agulhas ou passado da mãe para o bebê na gravidez ou amamentação."
+                "text": "Infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: Primária, secundária e terciária."
             },
             {
                 "heading": "Sintomas:",
@@ -197,6 +225,10 @@
             {
                 "heading":"Tratamento:",
                 "text": "O tratamento para sífilis deve ser feito de acordo com a orientação do médico, sendo importante seguir as indicações mesmo que não existam mais sintomas visíveis para garantir a eliminação da bactéria. Para isso, o médico normalmente indica injeções de penicilina-benzatina, também chamada de benzetacil, ou em alternativa outros antibióticos, como doxiciclina ou ceftriaxona."
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://www.tuasaude.com/sintomas-da-sifilis/' target='_blank'>Sífilis: o que é, sintomas, tipos, transmissão e tratamento</a>"
             }
         ],
         "relatedArticles": []
@@ -204,7 +236,7 @@
     {
         "id":"HPV_GENITAL",
         "title": "HPV genital",
-        "subtitle": "Infecção sexualmente transmissível causada pela bactéria Treponema pallidum capaz de causar de manifestar três estágios: primária, secundária e terciária.",
+        "subtitle": " O papilomavírus humano (HPV), é um vírus que infecta a pele e as mucosas.",
         "image": "image2",
         "content": [
             {
@@ -225,8 +257,21 @@
             },
             {
                 "heading":"Tratamento:",
-                "text": "O tratamento para sífilis deve ser feito de acordo com a orientação do médico, sendo importante seguir as indicações mesmo que não existam mais sintomas visíveis para garantir a eliminação da bactéria. Para isso, o médico normalmente indica injeções de penicilina-benzatina, também chamada de benzetacil, ou em alternativa outros antibióticos, como doxiciclina ou ceftriaxona."
+                "text": "Cerca de 90% dos pacientes com HPV conseguem a cura completa da lesão e apenas 10% das pessoas mantêm o vírus. Lesões pequenas, em menor quantidade ou externas, podem ser tratadas com cremes e ácidos. Um dos mais usados é o ácido tricloroacético, outras técnicas mais utilizadas é a cauterização a laser, em que o feixe de luz é direcionado na lesão, queimando-a."
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://www.minhavida.com.br/saude/temas/hpv' target='_blank'>HPV: o que é, sintomas e tem cura?</a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://www.cdc.gov/sti/about/about-genital-hpv-infection.html' target='_blank'>About Genital HPV Infection</a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://www.minhavida.com.br/materias/materia-12949' target='_blank'>IST's: conheça 15 infecções sexualmente transmissíveis</a>"
             }
+
         ],
         "relatedArticles": []
     },
@@ -275,6 +320,30 @@
             {
                 "heading":"",
                 "text": "Quando for fazer a denúncia quem deve fazê-la é a própria vítima, mas se for menor de idade, o responsável legal do menor deverá fazer a ocorrência. Há, em casos normais, seis meses para se fazer a denúncia, mas se a vítima tiver idade inferior à de dezoito anos, ela terá até sua maioridade para efetuá-la"
+            },
+            {
+                "heading":"REFERÊNCIAS:",
+                "text": "<a href='https://brasil.un.org/pt-br/80616-oms-aborda-consequ%C3%AAncias-da-viol%C3%AAncia-sexual-para-sa%C3%BAde-das-mulheres' target='_blank'>OMS aborda consequências da violência sexual para saúde das mulheres</a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://jus.com.br/artigos/108109/estupro-virtual-impactos-da-violencia-sexual-online-e-a-necesidade-da-sua-normatizacao' target='_blank'>Estupro virtual: impactos da violencia sexual online e a necesidade da sua normatização </a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://g1.globo.com/politica/noticia/2024/06/18/atlas-da-violencia-agressoes-sexuais.ghtml' target='_blank'>Atlas da Violência: agressões sexuais foram o maior tipo de violência contra meninas de 10 a 14 anos em 2022 </a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://news.un.org/pt/story/2023/07/1817547' target='_blank'>Mulheres e meninas são 94% das vítimas de violência sexual em conflitos</a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://brasil.un.org/pt-br/80616-oms-aborda-consequ%C3%AAncias-da-viol%C3%AAncia-sexual-para-sa%C3%BAde-das-mulheres' target='_blank'>OMS aborda consequências da violência sexual para saúde das mulheres</a>"
+            },
+            {
+                "heading":"",
+                "text": "<a href='https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2021-05/abuso-sexual-infantil-como-identificar-prevenir-e-combater' target='_blank'>Abuso sexual infantil: como identificar, prevenir e combater</a>"
             }
         ],
         "relatedArticles": []

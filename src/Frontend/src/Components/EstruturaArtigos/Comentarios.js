@@ -56,10 +56,11 @@ const TextoRestante = styled.p`
 const ComentarioContainer = styled.div`
   display: grid;
   grid-template-columns: 0.3fr 1fr 0.8fr 0.2fr;
-  grid-template-rows: 0.1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
   grid-template-areas:
     "i n d d"
-    "i c c b";
+    "i c c b"
+    "i c c .";
   margin: 40px;
   border: solid grey 2px;
   border-radius: 10px;

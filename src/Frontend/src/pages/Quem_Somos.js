@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import Imagem1 from "../assets/DSC_2706.JPG"
+import Imagem1 from "../assets/DSC_2706.jpg"
 import { Route } from "react-router-dom";
 import Desenvolvedores from "../Components/QuemSomos/Desenvolvedores";
 
@@ -48,7 +48,7 @@ function Quem_Somos() {
             <div> 
             <SomosTitulo>Grupo Enrolados</SomosTitulo>
             <SomosSubTitulo>Projeto Interdisciplinar - Programação WEB</SomosSubTitulo>
-            <QuemSomosTxt>Integrantes do grupo: Iury Xavier, Lilian Conde, Marcus Duque e Murilo Vieira</QuemSomosTxt>
+            <QuemSomosTxt>Integrantes do grupo: Lilian Conde, Iury Xavier, Marcus Duque e Murilo Vieira</QuemSomosTxt>
             <QuemSomosTxt>O Projeto começou como uma forma de conscientizar as pessoas sobre a educação e saúde sexual. Usando como base a ODS 3 e também o tópico 3.7, criamos esse site para falar sobre a saúde sexual.</QuemSomosTxt>
             </div>
             </QuemSomosEstrutura>

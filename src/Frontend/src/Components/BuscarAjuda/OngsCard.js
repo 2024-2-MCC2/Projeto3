@@ -53,11 +53,13 @@ const ButtonCard = styled(Link)`
 `
 
 const ButtonCardPopup = styled.a`
+display: flex;
+align-items: center;
   border: 1px solid grey; 
   margin-top: 15px;
   align-self: center;
   width: 60%;
-  height: 30px;
+  height: 22px;
   background-color: #4ec746;
   text-align: center;
   border-radius: 5px;
@@ -130,12 +132,12 @@ function OngsCard() {
           <ImgCard src={OngImage1} />
           <ButtonCard>Saiba mais</ButtonCard>
         </CardContainer>
-        <CardContainer onClick={() => handleCardClick('ABIA', '	http://localhost:3000/static/media/R.9929b23d53a8df706e27.jfif', 'Fundada em 1987, trabalha na promoção dos direitos de pessoas vivendo com HIV/AIDS e na conscientização sobre a epidemia de HIV. Essa promoção ocorre por meio de campanhas, pesquisas e atividades educativas.', 'https://abiaids.org.br/')}>
+        <CardContainer onClick={() => handleCardClick('ABIA', 'http://localhost:3000/static/media/Abia-LOGO-2.44dd3e54d922c0fb6538.png', 'Fundada em 1987, trabalha na promoção dos direitos de pessoas vivendo com HIV/AIDS e na conscientização sobre a epidemia de HIV. Essa promoção ocorre por meio de campanhas, pesquisas e atividades educativas.', 'https://abiaids.org.br/')}>
           <TituloCard>ABIA AIDS</TituloCard>
           <ImgCard src={OngImage2}/>
           <ButtonCard>Saiba mais</ButtonCard>
         </CardContainer>
-        <CardContainer onClick={() => handleCardClick('Ong 3', 'http://localhost:3000/static/media/Patr%C3%ADcia_Galv%C3%A3o_LOGO.833510d0416903dbb47e.jpg', 'Atua na promoção dos direitos das mulheres, incluindo temas como saúde sexual e reprodutiva. A organização também faz campanhas e pesquisas focadas em gênero, sexualidade, violência e abuso contra a mulher.', 'https://agenciapatriciagalvao.org.br/')}>
+        <CardContainer onClick={() => handleCardClick('Patrícia Galvão', 'http://localhost:3000/static/media/Patr%C3%ADcia_Galv%C3%A3o_LOGO.833510d0416903dbb47e.jpg', 'Atua na promoção dos direitos das mulheres, incluindo temas como saúde sexual e reprodutiva. A organização também faz campanhas e pesquisas focadas em gênero, sexualidade, violência e abuso contra a mulher.', 'https://agenciapatriciagalvao.org.br/')}>
           <TituloCard>Agência Patrícia Galvão</TituloCard>
           <ImgCard src={OngImage3} />
           <ButtonCard>Saiba mais</ButtonCard>

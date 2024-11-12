@@ -31,10 +31,11 @@ IdFeedbackArtigo integer primary key auto_increment,
 MensagemArtigo varchar(300) not null,
 DataComentarioArt timestamp default current_timestamp,
 IdArtigo varchar(255),
-ImagemUsuario longblob,
+ImagemUsuario varchar(255),
 IdUsuario integer,
 foreign key (IdUsuario) references usuario(IdUsuario)
 );
+
 
 create table feedback_site(
 IdFeedbackSite integer primary key auto_increment,

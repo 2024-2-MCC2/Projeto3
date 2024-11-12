@@ -56,11 +56,12 @@ const ButtonCard = styled(Link)`
 `
 
 const ButtonCardPopup = styled.a`
+align-items: center;
   border: 1px solid grey; 
   margin-top: 15px;
   align-self: center;
   width: 250px;
-  height: 30px;
+  height: 22px;
   background-color: #4ec746;
   text-align: center;
   border-radius: 5px;
@@ -70,6 +71,8 @@ const ButtonCardPopup = styled.a`
   text-decoration: none;
   display: inline-block;
   padding-top: 5px;
+
+  &:
 `;
 
 const PopupBackground = styled.div`
@@ -128,14 +131,14 @@ function Desenvolvedores() {
   return (
     <>
       <MainCardContainer>
-        <CardContainer onClick={() => handleCardClick('Iury', 'http://localhost:3000/static/media/DSC_2681%20(2).d11d0ac02f5f32c9e1e1.jfif', 'Desenvolvedor', 'https://www.linkedin.com/in/iury-xavier-03699430a/')}>
-          <TituloCard>Iury</TituloCard>
-          <ImgCard src={IuryImage}/>
-          <ButtonCard>Conheça mais</ButtonCard>
-        </CardContainer>
         <CardContainer onClick={() => handleCardClick('Lilian', 'http://localhost:3000/static/media/DSC_2687.e63482c991fc9246f08b.jfif', 'Desenvolvedora', 'https://www.linkedin.com/in/lilian-mercedes-paye-conde-894051333/')}>
           <TituloCard>Lilian</TituloCard>
           <ImgCard src={LilianImage} />
+          <ButtonCard>Conheça mais</ButtonCard>
+        </CardContainer>
+        <CardContainer onClick={() => handleCardClick('Iury', 'http://localhost:3000/static/media/DSC_2681%20(2).d11d0ac02f5f32c9e1e1.jfif', 'Desenvolvedor', 'https://www.linkedin.com/in/iury-xavier-03699430a/')}>
+          <TituloCard>Iury</TituloCard>
+          <ImgCard src={IuryImage}/>
           <ButtonCard>Conheça mais</ButtonCard>
         </CardContainer>
         <CardContainer onClick={() => handleCardClick('Marcus', 'http://localhost:3000/static/media/DSC_2692.8dd04e35b8d217d3671d.jfif', 'Desenvolverdor', 'https://www.linkedin.com/in/marcus-vin%C3%ADcius-miranda-duque-8987a5322/')}>

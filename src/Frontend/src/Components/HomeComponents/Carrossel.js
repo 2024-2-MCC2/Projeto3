@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import SetaDireita from './SetaDireita.png';
 import SetaEsquerda from './SetaEsquerda.png';
-import PrimeiraImagem from './img/dsts(950x350).jpg';
+import PrimeiraImagem from './img/Violencia_Sexual.jpg';
 import SegundaImagem from './img/Ensaio_Grávida.png';
 import TerceiraImagem from './img/vaccine-1.png';
 import { Link } from 'react-router-dom';

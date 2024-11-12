@@ -105,7 +105,7 @@ function UserProfile() {
             <LogoutButton onClick={handleLogout}>Sair</LogoutButton>
           </>
         ) : (
-          <p>Usuário não está logado.</p>
+          <p style={{height:"100px", paddingTop:'10%'}}>Nenhum usuário logado.</p>
         )}
       </ProfileContainer>
       <Footer />

@@ -199,7 +199,7 @@ function Cadastro() {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
           {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
-          <Button onClick={handleSubmit}>Cadastrar-se</Button>
+          <Button type="button" onClick={handleSubmit}>Cadastrar-se</Button>
           {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
         </BodyDiv>
       </CadastroDiv>
