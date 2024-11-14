@@ -96,7 +96,7 @@ function Login() {
     e.preventDefault();
     setErrorMessage('');
     try {
-      const response = await axios.post('http://localhost:5000/api/users/login', { email, password });
+      const response = await axios.post('http://localhost:3306/api/users/login', { email, password });
       const { user } = response.data;
       localStorage.setItem('user', JSON.stringify(user));
       navigate('/Area_Do_Usuario');

@@ -88,7 +88,7 @@ function Contato() {
     const subject = event.target[2].value;
     const feedback = event.target[3].value;
   
-    fetch('http://localhost:5000/api/email/send', {
+    fetch('http://localhost:3306/api/email/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

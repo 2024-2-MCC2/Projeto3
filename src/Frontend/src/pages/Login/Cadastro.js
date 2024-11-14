@@ -111,42 +111,52 @@ function Cadastro() {
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    if (password !== confirmPassword) {
-      setErrorMessage("As senhas não correspondem!");
-      return;
+  if (password !== confirmPassword) {
+    setErrorMessage("As senhas não correspondem!");
+    return;
+  }
+
+  setErrorMessage("");
+
+  const formData = new FormData();
+  formData.append("email", email);
+  formData.append("password", password);
+  formData.append("nome", name);
+  formData.append("datadeNascimento", dob);
+  formData.append("profileImage", imageFile);
+
+  try {
+    const response = await fetch("http://localhost:3306/api/users/register", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Error response:', errorText);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    setErrorMessage("")
+    const result = await response.json();
+    console.log(result);
+    setSuccessMessage("Usuário cadastrado com sucesso");
+  } catch (error) {
+    console.error("Error registering user:", error);
 
-    const formData = new FormData();
-    formData.append("email", email);
-    formData.append("password", password);
-    formData.append("nome", name);
-    formData.append("datadeNascimento", dob);
-    formData.append("profileImage", imageFile);
-
-    try {
-      const response = await fetch("http://localhost:5000/api/users/register", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Error response:', errorText);
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const result = await response.json();
-      console.log(result);
-      setSuccessMessage("Usuário cadastrado com sucesso");
-    } catch (error) {
-      console.error("Error registering user:", error);
-      setSuccessMessage("");
+    if (error.message.includes("Failed to fetch") || error.message.includes("NetworkError")) {
+      setErrorMessage("Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.");
+    } else if (error.message.includes("HTTP error")) {
+      setErrorMessage(`Erro de servidor: ${error.message}`);
+    } else {
+      setErrorMessage("Ocorreu um erro inesperado. Tente novamente.");
     }
-  };
+
+    setSuccessMessage("");
+  }
+};
+
 
   return (
     <div>

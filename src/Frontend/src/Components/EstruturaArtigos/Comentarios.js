@@ -133,7 +133,7 @@ function Comentarios() {
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/comments/${id}`);
+        const response = await fetch(`http://localhost:3306/api/comments/${id}`);
         if (!response.ok) {
           throw new Error(`Failed to load comments: HTTP ${response.status}`);
         }
@@ -173,7 +173,7 @@ function Comentarios() {
       };
 
       try {
-        const response = await fetch("http://localhost:5000/api/comments", {
+        const response = await fetch("http://localhost:3306/api/comments", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -219,7 +219,7 @@ function Comentarios() {
         return;
       }
 
-      const response = await fetch(`http://localhost:5000/api/comments/${commentId}/${user.IdUsuario}`, {
+      const response = await fetch(`http://localhost:3306/api/comments/${commentId}/${user.IdUsuario}`, {
         method: "DELETE",
       });
 

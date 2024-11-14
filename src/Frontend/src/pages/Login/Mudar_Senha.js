@@ -65,7 +65,7 @@ function MudarSenha() {
         }
 
         try {
-            const response = await fetch("http://localhost:5000/api/users/Mudar_Senha", {
+            const response = await fetch("http://localhost:3306/api/users/Mudar_Senha", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
