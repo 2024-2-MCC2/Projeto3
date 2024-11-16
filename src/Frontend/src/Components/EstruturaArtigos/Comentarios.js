@@ -242,7 +242,7 @@ function Comentarios() {
       {error && <ErrorMessage>{error}</ErrorMessage>}
       <FormContainer onSubmit={handleSubmit}>
         <div style={{ display: "flex" }}>
-          <Img src={user ? `http://localhost:3000${user.ImagemUsuario}` : "https://placehold.co/80x80/000000/FFFFFF.png"} />
+          <Img src={user ? `http://localhost:3306${user.ImagemUsuario}` : "https://placehold.co/80x80/000000/FFFFFF.png"} />
           <InputField
             placeholder="Digite o seu comentário aqui"
             onChange={handleFeedbackChange}
@@ -256,7 +256,7 @@ function Comentarios() {
 
       {comentarios.map((comentario) => {
         const imgSrc = comentario.userImage
-          ? `http://localhost:3000${comentario.userImage}`
+          ? `http://localhost:3306${comentario.userImage}`
           : "https://placehold.co/80x80/000000/FFFFFF.png";
 
         return (

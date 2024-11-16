@@ -85,6 +85,8 @@ function UserProfile() {
     navigate('/Login');
   };
 
+  console.log(`http://localhost:3306${user.ImagemUsuario}`)
+
   return (
     <div>
       <Header />
@@ -94,7 +96,7 @@ function UserProfile() {
             <PageTitle>Perfil de Usuário</PageTitle>
             <SubTitle>Bem-vindo(a), {user.NomeUsuario}</SubTitle>
             <ProfileImage
-              src={`http://localhost:3000${user.ImagemUsuario}`}
+              src={`http://localhost:3306${user.ImagemUsuario}`}
               alt="Profile"
             />
             <UserInfo>

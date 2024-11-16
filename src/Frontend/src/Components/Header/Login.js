@@ -57,7 +57,7 @@ function Login() {
 
 
   const imgSrc = user && user.ImagemUsuario
-    ? `http://localhost:3000${user.ImagemUsuario}`
+    ? `http://localhost:3306${user.ImagemUsuario}`
     : User; 
 
   const handleClick = () => {

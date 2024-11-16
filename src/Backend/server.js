@@ -21,7 +21,7 @@ app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 app.use('/api/email', emailRoutes);
 
-app.use('/uploads', express.static(path.join(__dirname, 'Frontend', 'public', 'uploads')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/api/users', userRoutes);
 app.use('/api/comments', commentRoutes);
