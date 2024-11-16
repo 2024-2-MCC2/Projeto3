@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import Imagem1 from "../assets/DSC_2706.jpg"
+import Imagem1 from "../assets/DSC_2706.JPG"
 import { Route } from "react-router-dom";
 import Desenvolvedores from "../Components/QuemSomos/Desenvolvedores";
 
