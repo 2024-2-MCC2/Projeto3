@@ -26,7 +26,7 @@ Meta 3.7 Até 2030, assegurar o acesso universal aos serviços de saúde sexual 
 O nosso site contará com inúmeros artigos que ajudaram o usuário a se informar sobre o assunto, além de uma seção dedicada a encaminhar o usuário a diversas ONGs que buscam ajudar mulheres e meninas em situações vulneráveis.
 
 ## Protótipo navegável no Figma
-https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&t=TPYKISG01Ujo0VhJ-1
+<a href="https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&t=TPYKISG01Ujo0VhJ-1">Protótipo navegável</a>
 
 ## Frontend
 <p>Link para o <a href="https://github.com/2024-2-MCC2/Projeto3/blob/main/src/Frontend/src/App.js">App.js</a> do projeto</p>
@@ -40,12 +40,10 @@ https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&
 -Raiz<br>
 |<br>
 |-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
+  &emsp;|-->Entrega 1<br>
+  &emsp;|-->Entrega 2<br>
+  &emsp;|-->Entrega 3<br>
+  &emsp;|-->Entrega 4<br>
 |-->imagens<br>
 |-->src<br>
   &emsp;|-->Backend<br>
@@ -55,8 +53,6 @@ https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
 <b>documentos</b>: Toda a documentação estará nesta pasta.
-
-<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
 
 <b>imagens</b>: Imagens do sistema
 
@@ -68,13 +64,15 @@ https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://code.visualstudio.com/">VSCode</a>
--<a href="https://nodejs.org/pt">Node.js</a>
-
+-<a href="https://code.visualstudio.com/">VSCode</a><br>
+-<a href="https://nodejs.org/pt">Node.js</a><br>
 ```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+Dentro da pasta Backend:
+npm install
+npx nodemon server.js
+Dentro da pasta Frontend:
+npm install
+npm start
 ```
 
 ## 📋 Licença/License
@@ -84,9 +82,8 @@ Coloque código do prompt de comnando se for necessário
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
+1.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+1. Agência Patrícia Galvão é uma iniciativa do Instituto Patrícia Galvão. Disponível em: <https://agenciapatriciagalvao.org.br/>. Acesso em: 16 nov. 2024.
+2. Associação brasileira interdisciplinar de aids. Disponível em: <https://abiaids.org.br/>. Acesso em: 16 nov. 2024.
+3. Instituto Liberta – Liberta Enfrentando a violência sexual contra crianças e adolescentes. Disponível em: <https://liberta.org.br/>. Acesso em: 16 nov. 2024.
