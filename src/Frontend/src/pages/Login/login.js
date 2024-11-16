@@ -9,37 +9,44 @@ const LoginPageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  padding: 20px;
 `;
 
 const LoginFormContainer = styled.div`
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
+  text-align: center;
 `;
 
 const Title = styled.h1`
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
 `;
 
 const Input = styled.input`
   display: block;
-  width: 100%;
+  width: 92%;
   padding: 15px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  
+  &:focus {
+    border-color: #a29bfe;
+    outline: none;
+  }
 `;
 
 const PasswordWrapper = styled.div`
   position: relative;
-  width: 100%;
-  margin-bottom: 10px;
 `;
 
 const ToggleButton = styled.button`
@@ -52,33 +59,41 @@ const ToggleButton = styled.button`
   color: #007bff;
   cursor: pointer;
   font-size: 14px;
-  padding: 0;
 `;
 
 const Button = styled.button`
   width: 100%;
   padding: 15px;
-  background-color: #007bff;
+  background-color: #a29bfe;
   color: white;
+  font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  
   &:hover {
-    background-color: #0056b3;
+    background-color: #6c5ce7;
+    transform: scale(1.05);
   }
 `;
 
 const Linke = styled(Link)`
   display: block;
-  text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 14px;
   color: #007bff;
   text-decoration: none;
+  
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const ErrorMessage = styled.div`
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 15px;
 `;
 
 function Login() {
@@ -113,8 +128,13 @@ function Login() {
       <LoginPageContainer>
         <LoginFormContainer>
           <Title>Login</Title>
-          {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
-          <Input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
+          {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
+          <Input
+            type="email"
+            placeholder="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <PasswordWrapper>
             <Input
               type={showPassword ? 'text' : 'password'}
