@@ -28,6 +28,9 @@ O nosso site contará com inúmeros artigos que ajudaram o usuário a se informa
 ## Protótipo navegável no Figma
 <a href="https://www.figma.com/design/XHJVBZffkHoOG76WZxA2po/Prototipo?node-id=0-1&m=dev&t=TPYKISG01Ujo0VhJ-1">Protótipo navegável</a>
 
+## Link para o site
+https://enroladosfecap.netlify.app/
+
 ## Frontend
 <p>Link para o <a href="https://github.com/2024-2-MCC2/Projeto3/blob/main/src/Frontend/src/App.js">App.js</a> do projeto</p>
 
